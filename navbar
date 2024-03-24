@@ -3,12 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-top:0;
 
 .navbar {
   overflow: hidden;
   background-color: #001919;
   width: 100%;
+  top:0;
 }
 
 .navbar a {
