@@ -6,6 +6,63 @@
 body {margin: 0; padding: 0;}
 </style>
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 </head>
@@ -18,6 +75,103 @@ body {margin: 0; padding: 0;}
     </script> 
 </body>
 
-<h2"About"></h2>
+<section>
+  <article>
+    <h1>About</h1>
+    <ol>
+<li><p>The <b>LLVM Core</b> libraries provide a modern source- and
+    target-independent <a href="docs/Passes.html">optimizer</a>, along with
+    <a href="docs/CodeGenerator.html">code generation support</a> for many
+    popular CPUs (as well as some less common ones!) These libraries are built
+    around a <a href="docs/LangRef.html">well specified</a> code representation
+    known as the LLVM intermediate representation ("LLVM IR").  The LLVM Core
+    libraries are <a href="docs/">well documented</a>, and it is particularly
+    easy to invent your own language (or port an existing compiler) to use
+    <a href="docs/tutorial/">LLVM as an optimizer and code generator</a>.</p>
+</li>
+
+<li><p><b><a href="https://clang.llvm.org">Clang</a></b> is an "LLVM native"
+    C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles,
+    extremely useful <a href="https://clang.llvm.org/diagnostics.html">error
+    and warning messages</a> and to provide a platform for building great
+    source level tools.
+    The <a href="https://clang-analyzer.llvm.org/">Clang Static Analyzer</a> and
+    <a href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a> are
+    tools that automatically find bugs in your code, and are great examples of the
+    sort of tools that can be built using the Clang frontend as a library to
+    parse C/C++ code.</p></li>
+
+<li><p>The <b><a href="https://lldb.llvm.org">LLDB</a></b> project builds on
+    libraries provided by LLVM and Clang to provide a great native debugger.
+    It uses the Clang ASTs and expression parser, LLVM JIT, LLVM disassembler,
+    etc so that it provides an experience that "just works".  It is also
+    blazing fast and much more memory efficient than GDB at loading symbols.
+    </p></li>
+
+<li><p>The <b><a href="https://libcxx.llvm.org">libc++</a></b> and
+    <b><a href="https://libcxxabi.llvm.org">libc++ ABI</a></b> projects provide
+    a standard conformant and high-performance implementation of the C++
+    Standard Library, including full support for C++11 and C++14.</p></li>
+
+<li><p>The <b><a href="https://compiler-rt.llvm.org">compiler-rt</a></b> project
+    provides highly tuned implementations of the low-level code generator
+    support routines like "<tt>__fixunsdfdi</tt>" and other calls generated when
+    a target doesn't have a short sequence of native instructions to implement
+    a core IR operation. It also provides implementations of run-time libraries
+    for dynamic testing tools such as
+    <a href="https://clang.llvm.org/docs/AddressSanitizer.html">AddressSanitizer</a>,
+    <a href="https://clang.llvm.org/docs/ThreadSanitizer.html">ThreadSanitizer</a>,
+    <a href="https://clang.llvm.org/docs/MemorySanitizer.html">MemorySanitizer</a>,
+    and
+    <a href="https://clang.llvm.org/docs/DataFlowSanitizer.html">DataFlowSanitizer</a>.
+    </p></li>
+
+<li><p>The <b><a href="https://mlir.llvm.org">MLIR</a></b> subproject is a novel
+    approach to building reusable and extensible compiler infrastructure. MLIR
+    aims to address software fragmentation, improve compilation for heterogeneous
+    hardware, significantly reduce the cost of building domain specific compilers,
+    and aid in connecting existing compilers together.
+    </p></li>
+
+<li><p>The <b><a href="https://openmp.llvm.org">OpenMP</a></b> subproject
+    provides an <a href="https://openmp.org">OpenMP</a> runtime for use with the
+    OpenMP implementation in Clang.</p></li>
+
+<li><p>The <b><a href="https://polly.llvm.org/">polly</a></b> project implements
+    a suite of cache-locality optimizations as well as auto-parallelism and
+    vectorization using a polyhedral model.</p></li>
+
+<li><p>The <b><a href="https://libclc.llvm.org/">libclc</a></b> project aims to
+    implement the OpenCL standard library.</p></li>
+
+<li><p>The <b><a href="https://klee.llvm.org">klee</a></b> project implements a
+    "symbolic virtual machine" which uses a theorem prover to try to evaluate
+    all dynamic paths through a program in an effort to find bugs and to prove
+    properties of functions.  A major feature of klee is that it can produce a
+    testcase in the event that it detects a bug.</p></li>
+
+<li><p>The <b><a href="https://lld.llvm.org/">LLD</a></b> project is a new
+    linker. That is a drop-in replacement for system linkers
+    and runs much faster.</p></li>
+
+<li><p>The <b>
+    <a href="https://github.com/llvm/llvm-project/tree/main/bolt">BOLT</a></b>
+    project is a post-link optimizer. It achieves the improvements by optimizing
+    application's code layout based on execution profile gathered by sampling
+    profiler.</p></li>
+</ol>
+  </article>
+    
+<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+    
+</section>
+</body>
+</html>
   
 <html>
