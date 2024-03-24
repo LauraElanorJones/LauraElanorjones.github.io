@@ -5,7 +5,6 @@
 <style>
 top:0;
 padding-top:0;
-position:relative;
 margin:0;
 
 .navbar {
