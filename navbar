@@ -9,6 +9,7 @@
   background-color: #001919;
   width: 100%;
   top:0;
+  padding-top:0;
 }
 
 .navbar a {
