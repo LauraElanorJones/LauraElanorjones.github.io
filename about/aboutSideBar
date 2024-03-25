@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {margin: 0; padding: 0;}
+
+.www_sidebar  { text-align: center; 
+               font-family: "Georgia","Palatino","Times","Roman";
+               font-size: 12pt;
+               margin-left: 0em; margin-right: 0em;
+               padding: 0.15em 0.15em 0.15em .15em; 
+               border: 2px solid #cccccc }
+</style>
+
+<table width="100%" border=0 cellpadding=10> 
+<tr>
+<td valign=top align=center>
+
+<!-- <img src="img/DragonSmall.png" width="136" height="136"> -->
+
+<b>Site Map:</b>
+<div class="www_sidebar">
+<a href="/Features.html">Features</a><br>
+<a href="/pubs/">Publications</a><br>
+<a href="/Users.html">LLVM&nbsp;Users</a><br>
+</div>
+
+<br>
+
+<b>Download!</b>
+<div class="www_sidebar">
+<span style="font-size:smaller">Download now:</span>
+<a href="https://releases.llvm.org/"><b>LLVM&nbsp;18.1.2</b></a><br>
+<a href="/releases/">All Releases</a><br>
+<a href="https://apt.llvm.org/">APT Packages</a><br>
+<a href="https://copr.fedorainfracloud.org/coprs/g/fedora-llvm-team/llvm-snapshots/">Fedora Snapshot Packages</a><br>
+<a href="https://prereleases.llvm.org/">Pre-releases</a><br>
+<br>
+
+<span style="font-size:smaller">View the open-source</span><br>
+<a href="/releases/14.0.0/LICENSE.TXT"><b>license</b></a>
+</div>
+
+<br>
+
+  <span style="font-size:smaller">Dev. Resources:</span><br>
+  <a href="/doxygen/">doxygen</a><br>
+  <a href="https://github.com/llvm/llvm-project/">Sources (GitHub)</a><br>
+  <a href="https://reviews.llvm.org">Code Review</a><br>
+  <a href="http://blog.llvm.org/">Blog</a><br>
+  <a href="https://github.com/llvm/llvm-project/issues/">Bug tracker</a><br>
+  <a href="https://lab.llvm.org/buildbot/">Buildbot</a><br>
+  <a href="http://green.lab.llvm.org/">Green Dragon</a><br>
+  <a href="http://lnt.llvm.org/">LNT</a><br>
+  <a href="/reports/scan-build/">Scan-build</a><br>
+  <a href="https://lab.llvm.org/coverage/coverage-reports/index.html">llvm-cov</a><br>
+  <a href="https://llvm-compile-time-tracker.com/">Compile-time tracker</a><br>
+</div>
+
+<br>
+
+<b>Release&nbsp;Emails</b>
+<div class="www_sidebar">
+  <span style="font-size:smaller">
+  18.1.2: <a href="https://discourse.llvm.org/t/18-1-2-released/77821">Mar 2024</a><br>
+  18.1.1: <a href="https://discourse.llvm.org/t/llvm-18-1-1-released/77540">Mar 2024</a><br>
+  18.1.0: <a href="https://discourse.llvm.org/t/llvm-18-1-0-released/77448">Mar 2024</a><br>
+  17.0.6: <a href="https://discourse.llvm.org/t/llvm-17-0-6-released/75281">Nov 2023</a><br>
+  17.0.5: <a href="https://discourse.llvm.org/t/llvm-17-0-5-released/74906">Nov 2023</a><br>
+  17.0.4: <a href="https://discourse.llvm.org/t/llvm-17-0-4-released/74548">Oct 2023</a><br>
+  17.0.3: <a href="https://discourse.llvm.org/t/llvm-17-0-3-released/74172">Oct 2023</a><br>
+  17.0.2: <a href="https://discourse.llvm.org/t/llvm-17-0-2-released/73840">Oct 2023</a><br>
+  17.0.1: <a href="https://discourse.llvm.org/t/llvm-17-0-1-released/73549">Sep 2023</a><br>
+  <a href="https://discourse.llvm.org/c/announce/46">All Announcements</a><br>
+  </span>
+</div>
+
+</td>
+<td valign=top>
+
+</html>
