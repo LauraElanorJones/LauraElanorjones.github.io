@@ -11,9 +11,9 @@ body {margin: 0; padding: 0;}
 
 /* Container for flexboxes */
 article {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
   display: -webkit-flex;
   display: flex;
 }
@@ -24,11 +24,12 @@ section {
   display: flex;
   background-color: #f1f1f1;
   padding: 10px;
+  flex: initial;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  section {
+  aside {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
