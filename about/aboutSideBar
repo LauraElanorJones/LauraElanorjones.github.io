@@ -19,7 +19,7 @@ body {margin: 0; padding: 0;}
 <table width="100%" border=0 cellpadding=10> 
 <tr>
 <td valign=top align=center>
-
+<div class="www_sectiontitle"><b>ACM Software System Award!</b></div>
   <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
      This award is given by ACM to <i>one</i> software system worldwide
    every year.
