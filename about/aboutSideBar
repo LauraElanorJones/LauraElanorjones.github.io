@@ -11,26 +11,18 @@ body {margin: 0; padding: 0;}
                font-size: 12pt;
                margin-left: 0em; margin-right: 0em;
                padding: 0.15em 0.15em 0.15em .15em; 
-               border: 2px solid #cccccc; 
+               border: 2px solid #001919; 
                width: 200px;}
 </style>
 
+<div class="www_sidebar">
 <table width="100%" border=0 cellpadding=10> 
 <tr>
 <td valign=top align=center>
 
-<!-- <img src="img/DragonSmall.png" width="136" height="136"> -->
-
-<div class="www_sectiontitle">ACM Software System Award!</div>
-<div class="www_text">
   <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
      This award is given by ACM to <i>one</i> software system worldwide
    every year.
-   <!--
-     and is "<i>Awarded to an institution or individual(s) recognized for
-     developing a software system that has had a lasting influence,
-     reflected in contributions to concepts, in commercial acceptance,
-     or both</i>".-->
      LLVM is <a href="https://awards.acm.org/software-system/award-recipients">
      in highly distinguished company</a>!
      Click on any of the individual recipients' names on that page for
@@ -39,7 +31,6 @@ body {margin: 0; padding: 0;}
 </div>
 
 <b>About:</b>
-<div class="www_sidebar">
 <a href="Features.html">Features</a><br>
 <a href="publications.html">Publications</a><br>
 <a href="Users.html">LLVM&nbsp;Users</a><br>
