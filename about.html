@@ -10,16 +10,18 @@ body {margin: 0; padding: 0;}
 }
 
 /* Container for flexboxes */
-section {
+article {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   display: -webkit-flex;
   display: flex;
 }
 
 /* Style the content */
 section {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+  display: -webkit-flex;
+  display: flex;
   background-color: #f1f1f1;
   padding: 10px;
 }
@@ -54,7 +56,7 @@ section {
 </body>
 
 <section>
-  <section>
+  <article>
     <h1 style="font-size:3vw">About</h1>
 
   <p>The LLVM Project is a collection of modular and reusable compiler and
@@ -180,7 +182,7 @@ section {
   </p>
   
   </div>
-</section>
+</article>
 
 <table width="100%" border=0 cellpadding=10> 
 <tr>
