@@ -12,7 +12,7 @@ body {margin: 0; padding: 0;}
                margin-left: 0em; margin-right: 0em;
                padding: 0.15em 0.15em 0.15em .15em; 
                border: 2px solid #001919; 
-               width: 200px;}
+               width: 300px;}
 </style>
 
 <div class="www_sidebar">
@@ -28,8 +28,8 @@ body {margin: 0; padding: 0;}
      Click on any of the individual recipients' names on that page for
      the detailed citation describing the award.
     </p>
-  </div>
 
+<div class="www_sidebar">
 <b>About:</b>
 <a href="Features.html">Features</a><br>
 <a href="publications.html">Publications</a><br>
@@ -88,5 +88,5 @@ body {margin: 0; padding: 0;}
 
 </td>
 <td valign=top>
-
+</div>
 </html>
