@@ -50,7 +50,7 @@ section {
 <body>
     <div id="nav-placeholder"></div>
     <script>
-        $.get("../about/navbar", function(data){
+        $.get("/navbar", function(data){
             $("#nav-placeholder").replaceWith(data);
         });
     </script> 
