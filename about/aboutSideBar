@@ -39,9 +39,9 @@ body {margin: 0; padding: 0;}
 
 <b>About:</b>
 <div class="www_sidebar">
-<a href="/Features.html">Features</a><br>
-<a href="/pubs/">Publications</a><br>
-<a href="/Users.html">LLVM&nbsp;Users</a><br>
+<a href="Features.html">Features</a><br>
+<a href="publications.html">Publications</a><br>
+<a href="Users.html">LLVM&nbsp;Users</a><br>
 </div>
 
 <br>
