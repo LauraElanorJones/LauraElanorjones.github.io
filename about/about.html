@@ -68,8 +68,8 @@ section {
     
     <p>The primary sub-projects of LLVM are:</p>
     
-    <ol>
-    <ul><p><b>LLVM Core</b> libraries provide a modern source- and
+    <ul>
+    <li><p><b>LLVM Core</b> libraries provide a modern source- and
         target-independent <a href="docs/Passes.html">optimizer</a>, along with
         <a href="docs/CodeGenerator.html">code generation support</a> for many
         popular CPUs (as well as some less common ones!) These libraries are built
@@ -78,9 +78,9 @@ section {
         libraries are <a href="docs/">well documented</a>, and it is particularly
         easy to invent your own language (or port an existing compiler) to use
         <a href="docs/tutorial/">LLVM as an optimizer and code generator</a>.</p>
-    </ul>
+    </li>
     
-    <ul><p><b><a href="https://clang.llvm.org">Clang</a></b> is an "LLVM native"
+    <li><p><b><a href="https://clang.llvm.org">Clang</a></b> is an "LLVM native"
         C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles,
         extremely useful <a href="https://clang.llvm.org/diagnostics.html">error
         and warning messages</a> and to provide a platform for building great
@@ -89,21 +89,21 @@ section {
         <a href="https://clang.llvm.org/extra/clang-tidy/">clang-tidy</a> are
         tools that automatically find bugs in your code, and are great examples of the
         sort of tools that can be built using the Clang frontend as a library to
-        parse C/C++ code.</p></ul>
+        parse C/C++ code.</p></li>
     
-    <ul><p><b><a href="https://lldb.llvm.org">LLDB</a></b> builds on
+    <li><p><b><a href="https://lldb.llvm.org">LLDB</a></b> builds on
         libraries provided by LLVM and Clang to provide a great native debugger.
         It uses the Clang ASTs and expression parser, LLVM JIT, LLVM disassembler,
         etc so that it provides an experience that "just works".  It is also
         blazing fast and much more memory efficient than GDB at loading symbols.
-        </p></ul>
+        </p></li>
     
-    <ul><p><b><a href="https://libcxx.llvm.org">Libc++</a></b> and
+    <li><p><b><a href="https://libcxx.llvm.org">Libc++</a></b> and
         <b><a href="https://libcxxabi.llvm.org">libc++ ABI</a></b> provide
         a standard conformant and high-performance implementation of the C++
-        Standard Library, including full support for C++11 and C++14.</p></ul>
+        Standard Library, including full support for C++11 and C++14.</p></li>
     
-    <ul><p><b><a href="https://compiler-rt.llvm.org">Compiler-rt</a></b>
+    <li><p><b><a href="https://compiler-rt.llvm.org">Compiler-rt</a></b>
         provides highly tuned implementations of the low-level code generator
         support routines like "<tt>__fixunsdfdi</tt>" and other calls generated when
         a target doesn't have a short sequence of native instructions to implement
@@ -114,42 +114,42 @@ section {
         <a href="https://clang.llvm.org/docs/MemorySanitizer.html">MemorySanitizer</a>,
         and
         <a href="https://clang.llvm.org/docs/DataFlowSanitizer.html">DataFlowSanitizer</a>.
-        </p></ul>
+        </p></li>
     
-    <ul><p><b><a href="https://mlir.llvm.org">MLIR</a></b> is a novel
+    <li><p><b><a href="https://mlir.llvm.org">MLIR</a></b> is a novel
         approach to building reusable and extensible compiler infrastructure. MLIR
         aims to address software fragmentation, improve compilation for heterogeneous
         hardware, significantly reduce the cost of building domain specific compilers,
         and aid in connecting existing compilers together.
-        </p></ul>
+        </p></li>
     
-    <ul><p><b><a href="https://openmp.llvm.org">OpenMP</a></b>
+    <li><p><b><a href="https://openmp.llvm.org">OpenMP</a></b>
         provides an <a href="https://openmp.org">OpenMP</a> runtime for use with the
-        OpenMP implementation in Clang.</p></ul>
+        OpenMP implementation in Clang.</p></li>
     
-    <ul><p><b><a href="https://polly.llvm.org/">Polly</a></b> implements
+    <li><p><b><a href="https://polly.llvm.org/">Polly</a></b> implements
         a suite of cache-locality optimizations as well as auto-parallelism and
-        vectorization using a polyhedral model.</p></ul>
+        vectorization using a polyhedral model.</p></li>
     
-    <ul><p><b><a href="https://libclc.llvm.org/">Libclc</a></b> aims to
-        implement the OpenCL standard library.</p></ul>
+    <li><p><b><a href="https://libclc.llvm.org/">Libclc</a></b> aims to
+        implement the OpenCL standard library.</p></li>
     
-    <ul><p><b><a href="https://klee.llvm.org">klee</a></b> implements a
+    <li><p><b><a href="https://klee.llvm.org">klee</a></b> implements a
         "symbolic virtual machine" which uses a theorem prover to try to evaluate
         all dynamic paths through a program in an effort to find bugs and to prove
         properties of functions.  A major feature of klee is that it can produce a
-        testcase in the event that it detects a bug.</p></ul>
+        testcase in the event that it detects a bug.</p></li>
     
-    <ul><p><b><a href="https://lld.llvm.org/">LLD</a></b> is a new
+    <li><p><b><a href="https://lld.llvm.org/">LLD</a></b> is a new
         linker. That is a drop-in replacement for system linkers
-        and runs much faster.</p></ul>
+        and runs much faster.</p></li>
     
-    <ul><p><b>
+    <li><p><b>
         <a href="https://github.com/llvm/llvm-project/tree/main/bolt">BOLT</a></b>
         is a post-link optimizer. It achieves the improvements by optimizing
         application's code layout based on execution profile gathered by sampling
-        profiler.</p></ul>
-    </ol>
+        profiler.</p></li>
+    </ul>
     
     <p>In addition to official subprojects of LLVM, there are a broad variety of
     other projects that <a href="/ProjectsWithLLVM/">use components
