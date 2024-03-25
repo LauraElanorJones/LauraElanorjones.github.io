@@ -19,16 +19,16 @@ body {margin: 0; padding: 0;}
 <table width="100%" border=0 cellpadding=10> 
 <tr>
 <td valign=top align=center>
-<div class="www_sectiontitle"><b>ACM Software System Award!</b></div>
-  <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
+  <b>ACM Software System Award!</b>
+    <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
      This award is given by ACM to <i>one</i> software system worldwide
-   every year.
+     every year.
      LLVM is <a href="https://awards.acm.org/software-system/award-recipients">
      in highly distinguished company</a>!
      Click on any of the individual recipients' names on that page for
      the detailed citation describing the award.
-  </p>
-</div>
+    </p>
+  </div>
 
 <b>About:</b>
 <a href="Features.html">Features</a><br>
