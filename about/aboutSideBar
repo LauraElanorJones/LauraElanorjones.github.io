@@ -15,8 +15,8 @@ body {margin: 0; padding: 0;}
                width: 300px;}
 </style>
 
-<div class="www_sidebar">
 <table width="100%" border=0 cellpadding=10> 
+<div class="www_sidebar">
 <tr>
 <td valign=top align=center>
   <b>ACM Software System Award!</b>
