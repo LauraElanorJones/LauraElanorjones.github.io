@@ -29,8 +29,8 @@ body {margin: 0; padding: 0;}
      the detailed citation describing the award.
     </p>
 
-<div class="www_sidebar">
 <b>About:</b>
+<div class="www_sidebar">
 <a href="Features.html">Features</a><br>
 <a href="publications.html">Publications</a><br>
 <a href="Users.html">LLVM&nbsp;Users</a><br>
@@ -48,7 +48,7 @@ body {margin: 0; padding: 0;}
 <a href="https://prereleases.llvm.org/">Pre-releases</a><br>
 <br>
 
-<span style="font-size:smaller">View the open-source</span><br>
+<span style="font-size:smaller">View the open-source:</span><br>
 <a href="/releases/14.0.0/LICENSE.TXT"><b>license</b></a>
 </div>
 
