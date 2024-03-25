@@ -12,10 +12,10 @@ body {margin: 0; padding: 0;}
                margin-left: 0em; margin-right: 0em;
                padding: 0.15em 0.15em 0.15em .15em; 
                border: 2px solid #001919; 
-               width: 400px;}
+               width: 300px;}
 </style>
 
-<table width="100%" border=0 cellpadding=10> 
+<border=0 cellpadding=10> 
 <div class="www_sidebar">
 <tr>
 <td valign=top align=center>
