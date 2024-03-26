@@ -14,7 +14,7 @@ body {margin: 0; padding: 0;}
                width: 300px;}
 </style>
 
-<div class="www_sidebar"; width: 325px;>
+<div class="www_sidebar"; width: 340px;>
 <tr>
 <td valign=top align=center>
   <b>ACM Software System Award!</b>
