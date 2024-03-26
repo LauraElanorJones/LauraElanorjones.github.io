@@ -15,7 +15,7 @@ body {margin: 0; padding: 0;}
                width: 300px;}
 </style>
 
-<border=0 padding=10> 
+<div border=0 padding=10> 
 <div class="www_sidebar">
 <tr>
 <td valign=top align=center>
@@ -87,5 +87,6 @@ body {margin: 0; padding: 0;}
 
 </td>
 <td valign=top>
+</div>
 </div>
 </html>
