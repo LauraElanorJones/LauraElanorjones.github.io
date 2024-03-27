@@ -13,22 +13,26 @@ body {margin: 0; padding: 0;}
                padding: 1px 1px 1px 1px; 
                border: 2px solid #001919; 
                width: 250px;}
+
+.bigSideBar { width: 340px; }
+
 </style>
+</head>
 
 <div class="www_sidebar">
-<div width: 340px;>
-<tr>
-<td valign=top align=center>
-  <b>ACM Software System Award!</b>
-    <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
-     This award is given by ACM to <i>one</i> software system worldwide
-     every year.
-     LLVM is <a href="https://awards.acm.org/software-system/award-recipients">
-     in highly distinguished company</a>!
-     Click on any of the individual recipients' names on that page for
-     the detailed citation describing the award.
-    </p>
-</div>
+  <div class="bigSideBar">
+    <tr>
+    <td valign=top align=center>
+      <b>ACM Software System Award!</b>
+        <p>LLVM has been awarded the <b>2012 ACM Software System Award</b>!
+         This award is given by ACM to <i>one</i> software system worldwide
+         every year.
+         LLVM is <a href="https://awards.acm.org/software-system/award-recipients">
+         in highly distinguished company</a>!
+         Click on any of the individual recipients' names on that page for
+         the detailed citation describing the award.
+        </p>
+  </div>
 
 <b>About:</b>
 <div class="www_sidebar">
