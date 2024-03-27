@@ -1,1 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin: 0; padding: 0;}
 
+article {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the content */
+section {
+  display: -webkit-flex;
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: initial;
+}
+    
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+  
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("/navbar", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script> 
+</body>
+
+<section>
+  <article>
+    <div>
+        <div id="pubs_list"><h2>2018</h2><ol>
+          <li>"<a href="http://web.ist.utl.pt/nuno.lopes/pubs/llvmmem-oopsla18.pdf">Reconciling High-Level Optimizations and Low-Level Code in LLVM</a>
+            "<br>
+            Juneyoung Lee, Chung-Kil Hur, Ralf Jung, Zhengyang Liu, John Regehr, and Nuno P. Lopes<br><i>Proc. of the ACM on Programming Languages, 
+            Volume 2 Issue OOPSLA</i>, Nov. 2018.<br><br></li><li>"<a href="https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-dong.pdf">
+            Shielding Software from Privileged Side-Channel Attacks</a>"<br>Xiaowan Dong, Zhuojia Shen, John Criswell, Alan L. Cox, and Sandhya Dwarkadas
+            <br>
+            <i>Proceedings of the Twenty Seventh Usenix Security Symposium</i>, Aug. 2018.<br><br></li>
+          <li>"<a href="https://dl.acm.org/citation.cfm?id=3214297">Spectres, Virtual Ghosts, and Hardware Support</a>
+            "<br>Xiaowan Dong, Zhuojia Shen, John Criswell, Alan Cox, and Sandhya Dwarkadas<br><i>Proceedings of the Seventh 
+              International Workshop on Hardware and Architectural Support for Security and Privacy (HASP)</i>, June 2018.<br><br></li>
+          <li>"<a href="https://ieeexplore.ieee.org/document/8411727/">Mull It Over: Mutation Testing Based on LLVM</a>
+            "<br>Alex Denisov, Stanislav Pankevich<br><i>IEEE International Conference on Software Testing, Verification and 
+              Validation Workshops (ICSTW)</i>, Apr. 2018.<br><br></li></ol><h2>2017</h2><ol>
+          <li>"<a href="http://soarlab.org/2017/09/aplas2017-hr">Counterexample-Guided Bit-Precision Selection</a>
+            "<br>Shaobo He and Zvonimir Rakamaric<br><i>Proceedings of the Fifteenth Asian Symposium on Programming Languages 
+              and Systems (APLAS)</i>, Nov. 2017.<br><br></li>
+          <li>"<a href="https://dl.acm.org/citation.cfm?doid=3135932.3135947">Devirtualization in LLVM</a>
+            "<br>Piotr Padlewski<br><i>Proceedings Companion of the 2017 ACM SIGPLAN International Conference on Systems, Programming, 
+              Languages, and Applications: Software for Humanity (SPLASH 2017)</i>, Oct. 2017.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/document/8077809">FaCT: A Flexible, Constant-Time Programming Language</a>
+            "<br>Sunjay Cauligi, Gary Soeller, Fraser Brown, Brian Johannesmeyer, Yunlu Huang, Ranjit Jhala, and Deian Stefan<br><i>IEEE Cybersecurity Development Conference (SecDev)</i>, Sep. 2017.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/document/8077808">Program Analysis of Cryptographic Implementations for Security</a>
+            "<br>Sazzadur Rahaman and Danfeng Yao<br><i>IEEE Cybersecurity Development Conference (SecDev)</i>, Sep. 2017.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/document/8077803">A Software Solution for Hardware Vulnerabilities</a>
+            "<br>Komail Dharsee, Ethan Johnson, and John Criswell<br><i>IEEE Cybersecurity Development Conference (SecDev)</i>, Sep. 2017.<br><br></li>
+          <li>"<a href="http://scholarworks.rit.edu/theses/9550/">The Design of a Custom 32-bit RISC CPU and LLVM Compiler Backend</a>
+            "<br>Connor Goldberg<br><i>Master's Thesis, Rochester Institute of Technology</i>, Aug. 2017.<br><br></li>
+          <li>"Piecewise Holistic Autotuning of Parallel Programs with CERE" <a href="http://www.google.com/search?q=Piecewise%20Holistic%20Autotuning%20of%20Parallel%20Programs%20with%20CERE">search</a>
+            <br>Mihail Popov, Chadi Akel, Yohan Chatelain, William Jalby, and Pablo de Oliveira Castro<br><i>Concurrency and Computation: Practice and Experience</i>, June 2017.<br><br></li>
+          <li>"<a href="http://web.ist.utl.pt/nuno.lopes/pubs/undef-pldi17.pdf">Taming Undefined Behavior in LLVM</a>"<br>Juneyoung Lee, Yoonseung Kim, Youngju Song, Chung-Kil Hur, Sanjoy Das, David Majnemer, John Regehr, and Nuno P. Lopes
+            <br><i>Proc. of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>, June 2017.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=3092268&amp;CFID=967844128&amp;CFTOKEN=15248470">Flexible and Efficient Memory Object Metadata</a>
+            "<br>Zhengyang Liu and John Criswell<br><i>International Symposium on Memory Management (ISMM)</i>, June 2017.<br><br></li>
+          <li>"<a href="https://dl.acm.org/citation.cfm?id=3053007">Detecting Privileged Side-Channel Attacks in Shielded Execution with Déjà Vu</a>
+            "<br>	Sanchuan Chen, Xiaokuan Zhang, Michael K. Reiter, and Yinqian Zhang<br><i>Proceedings of the 2017 ACM Asia Conference on Computer and Communications Security (AsiaCCS)</i>, Apr. 2017.<br><br>
+          </li></ol><h2>2016</h2><ol>
+          <li>"<a href="http://formalverification.cs.utah.edu/new/Publications.html#vcsharma_hipc16">PRESAGE: Protecting Structured Address Generation against Soft Errors</a>
+            "<br>Vishal Chandra Sharma, Ganesh Gopalakrishnan, Sriram Krishnamoorthy<br><i>IEEE International Conference of High-Performance Computing, Data, and Analysis (HiPC)</i>, Nov. 2016.<br><br></li>
+          <li>"<a href="https://link.springer.com/chapter/10.1007/978-3-319-43659-3_18">Piecewise Holistic Autotuning of Compiler and Runtime Parameters</a>
+            "<br>Mihail Popov, Chadi Akel, William Jalby, and Pablo de Oliveira Castro<br><i>Twenty-Second International Conference on Parallel and Distributed Computing (Euro-Par)</i>, Aug. 2016.<br><br></li>
+          <li>"<a href="https://hal.archives-ouvertes.fr/hal-01192668">Verificarlo: checking floating point accuracy through Monte Carlo Arithmetic.</a>
+            "<br>Christophe Denis, Pablo de Oliveira Castro, and Eric Petit<br><i>23rd IEEE International Symposium on Computer Arithmetic (ARITH)</i>, July 2016.<br><br></li>
+          <li>"<a href="http://www.cse.unsw.edu.au/~ysui/papers/fse16.pdf">On-Demand Strong Update Analysis via Value-Flow Refinement</a>
+            "<br>Yulei Sui and Jingling Xue<br><i>ACM SIGSOFT International Symposium on the Foundation of Software Engineering (FSE 2016)</i>, Nov. 2016.<br><br></li>
+          <li>"<a href="http://www.cs.rutgers.edu/~santosh.nagarakatte/papers/alive-fp-sas16.pdf">Alive-FP: Automated Verification of Floating Point Based Peephole Optimizations in LLVM</a>
+            "<br>David Menendez, Santosh Nagarakatte, and Aarti Gupta<br><i>Proceedings of the 23rd Static Analysis Symposium (SAS 2016)</i>, Aug. 2016.<br><br></li>
+          <li>"<a href="https://ieeexplore.ieee.org/document/7546545">Data-Oriented Programming: On the Expressiveness of Non-Control Data Attacks</a>
+            "<br>Hong Hu, Shweta Shinde, Sendroiu Adrian, Zheng Leong Chua, Prateek Saxena, and Zhenkai Liang<br><i>Proceedings of the 2016 IEEE Symposium on Security and Privacy (SP 2016)</i>, May 2016.<br><br></li>
+          <li>"<a href="http://www.cs.rutgers.edu/~santosh.nagarakatte/papers/icse2016-alive-loops.pdf">Termination-Checking for LLVM Peephole Optimizations</a>
+            "<br>David Menendez and Santosh Nagarakatte<br><i>Proceedings of the 38th International Conference on Software Engineering (ICSE 2016)</i>, May 2016.<br><b>ACM SIGSOFT Distinguished Paper Award.</b><br><br></li>
+          <li>"<a href="http://www.cs.utah.edu/~vcsharma/pubs/dpdns2016-shrg.pdf">Towards Resiliency Evaluation of Vector Programs</a>
+            "<br>Vishal Chandra Sharma, Ganesh Gopalakrishnan, Sriram Krishnamoorthy<br><i>21st IEEE Workshop on Dependable Parallel, Distributed and Network-Centric Systems (DPDNS)</i>, May 2016.<br><br></li>
+          <li>"<a href="http://soarlab.org/publications/ipdps2016-agralslpm.pdf">Archer: Effectively Spotting Data Races in Large OpenMP Applications</a>
+            "<br>Simone Atzeni, Ganesh Gopalakrishnan, Zvonimir Rakamaric, Dong H. Ahn, Ignacio Laguna, Martin Schulz, Greg L. Lee, Joachim Protze, Matthias S. Muller<br><i>Proceedings of the 30th IEEE International Parallel and Distributed Processing Symposium (IPDPS 2016)</i>, May 2016.<br><br></li>
+          <li>"<a href="http://www.cse.unsw.edu.au/~ysui/papers/cgo16.pdf">Sparse Flow-Sensitive Pointer Analysis for Multithreaded Programs</a>
+            "<br>Yulei Sui, Peng Di, and Jingling Xue<br><i>2016 International Symposium on Code Generation and Optimization (CGO 2016)</i>, Mar. 2016.<br><br></li>
+          <li>"<a href="http://www.cse.unsw.edu.au/~ysui/papers/cc16.pdf">SVF: Interprocedural Static Value-Flow Analysis in LLVM</a>
+            "<br>Yulei Sui and Jingling Xue<br><i>25th International Conference on Compiler Construction (CC 2016)</i>, Mar. 2016.<br><br></li>
+          <li>"<a href="http://thiernobarry.fr/publications/preprint/T-Barry.pdf">Compilation of a Countermeasure Against Instruction-Skip Fault Attacks</a>
+            "<br>Thierno Barry, Damien Courousse, Bruno Robisson<br><i>Cryptography and Security in Computing Systems 2016” (CS2)</i>, Jan. 2016.<br><br>
+          </li></ol><h2>2015</h2><ol>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2843863">Flowtables: Program Skeletal Inversion for Defeat of Interprocedural Analysis with Unique Metamorphism</a>
+            "<br>Luke Jones, Ryan Whelan, Jeremy Blackthorne, and Graham Baker<br><i>Proceedings of the Fifth Program Protection and Reverse Engineering Workshop (PPREW-5)</i>, Dec. 2015.<br><br></li>
+          <li>"<a href="http://soarlab.org/publications/ase2015-ddr.pdf">Fast and Precise Symbolic Analysis of Concurrency Bugs in Device Drivers</a>
+            "<br>Pantazis Deligiannis, Alastair F. Donaldson, and Zvonimir Rakamaric<br><i>Proceedings of the Thirtieth IEEE/ACM International Conference on Automated Software Engineering (ASE 2015)</i>, Nov. 2015.<br><br></li>
+          <li>"<a href="https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-araujo.pdf">Compiler-instrumented, Dynamic Secret-Redaction of Legacy Processes for Attacker Deception</a>
+            "<br>Frederico Araujo and Kevin W. Hamlen<br><i>Proceedings of the 24th USENIX Security Symposium</i>, Aug. 2015.<br><br></li>
+          <li>"<a href="http://tinker.cc.gatech.edu/pdfs/a25-railing.pdf">Contech: Efficiently Generating Dynamic Task Graphs for Arbitrary Parallel Programs</a>
+            "<br>Brian P. Railing, Eric R. Hein, and Thomas M. Conte<br><i>ACM Transactions on Architecture and Code Optimization</i>, July 2015.<br><br></li>
+          <li>"<a href="http://web.ist.utl.pt/nuno.lopes/pubs/alive-pldi15.pdf">Provably Correct Peephole Optimizations with Alive</a>
+            "<br>Nuno P. Lopes, David Menendez, Santosh Nagarakatte, and John Regehr<br><i>Proc. of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2015)</i>, June 2015.<br><b>Received a Distinguished Paper Award.</b><br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2737994">LaminarIR: Compile-Time Queues for Structured Streams</a>
+            "<br>Yousun Ko, Bernd Burgstaller, Bernhard Scholz<br><i>Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2015)</i>, June 2015.<br><br></li>
+          <li>"<a href="http://gsd.inesc-id.pt/~nmachado/papers/pldi15-nmachado.pdf">Concurrency Debugging with Differential Schedule Projections</a>
+            "<br>Nuno Machado, Brandon Lucia, and Luís Rodrigues<br><i>Proc. of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2015)</i>, June 2015.<br><br></li>
+          <li>"<a href="http://crypto.junod.info/spro15.pdf">Obfuscator-LLVM - Software Protection for the Masses</a>
+            "<br>Pascal Junod, Julien Rinaldini, Johan Wehrli and Julie Michielin<br><i>Proceedings of the First International Workshop on Software Protection (SPRO 2015)</i>, May 2015.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=7161599&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7161599">PCERE: Fine-Grained Parallel Benchmark Decomposition for Scalability Prediction</a>
+            "<br>Mihail Popov, Chadi Akel, Florent Conti, William Jalby, and Pablo de Oliveira Castro<br><i>IEEE International Parallel and Distributed Processing Symposium (IPDPS)</i>, May 2015.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2724717">CERE: LLVM Based Codelet Extractor and REplayer for Piecewise Benchmarking and Optimization</a>
+            "<br>Pablo De Oliveira Castro, Chadi Akel, Eric Petit, Mihail Popov, and William Jalby<br><i>ACM Transactions on Architecture and Code Optimization (TACO)</i>, Apr. 2015.<br><br></li>
+          <li>"<a href="http://www.cl.cam.ac.uk/~dc552/papers/asplos15-memory-safe-c.pdf">Beyond the PDP-11: Architectural Support for a Memory-Safe C Abstract Machine</a>
+            "<br>David Chisnall, Colin Rothwell, Robert N. M. Watson, Jonathan Woodruff, Munraj Vadera, Simon W. Moore, Michael Roe, Brooks Davis, and Peter G. Neumann<br><i>Proceedings of the Twentieth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2015)</i>, Mar. 2015.<br><br></li>
+          <li>"<a href="http://research.google.com/pubs/pub43308.html">MemorySanitizer: fast detector of uninitialized memory use in C++</a>
+            "<br>Evgeniy Stepanov and Konstantin Serebryany<br><i>Proceedings of the 2015 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)</i>, Feb. 2015.<br><br></li></ol><h2>2014</h2><ol>
+          <li>"<a href="http://128.232.0.20/techreports/UCAM-CL-TR-865.pdf">I/O Optimisation and elimination via partial evaluation</a>
+            "<br>Christopher S.F. Smowton<br><i>Technical Report UCAM-CL-TR-865, University of Cambridge</i>, Dec. 2014.<br><br></li>
+          <li>"<a href="http://dx.doi.org/10.1002/spe.2297">Experimental Evaluation of Various Register Pressure Reduction Heuristics</a>
+            "<br>Ghassan Shobaki, Laith Sakka, Najm Eldeen Abu-Rmaileh, and Hasan Al-Hamash<br><i>Software: Practice and Experience</i>, Nov. 2014.<br><br></li>
+          <li>"<a href="http://james0zan.github.io/resource/fse14_zhang.pdf">AI: A Lightweight System for Tolerating Concurrency Bugs</a>
+            "<br>Mingxing Zhang, Yongwei Wu, Shan Lu, Shanxiang Qi, Jinglei Ren, and Weimin Zheng<br><i>Proceedings of the Twenty Second ACM SIGSOFT International Symposium on Foundations of Software Engineering</i>, Nov. 2014.<br><b>Received an ACM SIGSOFT Distinguished Paper Award.</b><br><br></li>
+          <li>"<a href="http://www.icir.org/robin/papers/imc14-hilti.pdf">HILTI: An Abstract Execution Environment for Deep, Stateful Network Traffic Analysis</a>
+            "<br>Robin Sommer, Matthias Vallentin, Lorenzo De Carli, Vern Paxson<br><i>Proceedings of the ACM SIGCOMM Internet Measurement Conference</i>, Nov. 2014.<br><br></li>
+          <li>"<a href="http://formalverification.cs.utah.edu/papers/SC14-GKLEE-SESA.pdf">Practical Symbolic Checking of GPU Programs</a>
+            "<br>Peng Li, Guodong Li, Ganesh Gopalakrishnan<br><i>Supercomputing</i>, Nov. 2014.<br><br></li>
+          <li>"<a href="http://dx.doi.org/10.1007/978-3-319-11737-9_17">A Formula-Based Approach for Automatic Fault Localization of Imperative Programs</a>
+            "<br>Si-Mohamed Lamraoui and Shin Nakajima<br><i>Proceedings of the Sixteenth International Conference on Formal Engineering Methods (ICFEM '14)</i>, Nov. 2014.<br><br></li>
+          <li>"<a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-kuznetsov.pdf">Code-Pointer Integrity</a>
+            "<br>Volodymyr Kuznetsov, László Szekeres, Mathias Payer, George Candea, R. Sekar, and Dawn Song<br><i>Proceedings of the Eleventh USENIX Symposium on Operating Systems Design and Implementation (OSDI 2014)</i>, Oct. 2014.<br><br></li>
+          <li>"<a href="http://hdl.handle.net/2142/50547">Secure Virtual Architecture: Security for Commodity Software Systems</a>
+            "<br>John Criswell<br><i>Ph.D. Dissertation,  University of Illinois at Urbana-Champaign</i>, Sep. 2014.<br><b>Received the 2015 David J. Kuck Outstanding Ph.D. Thesis Award, the Honorable Mention for the 2014 ACM SIGOPS Dennis M. Ritchie Doctoral Dissertation Award, and an Honorable Mention for the 2014 ACM Doctoral Dissertation Award.</b><br><br></li>
+          <li>"<a href="http://www.pds.ewi.tudelft.nl/fileadmin/pds/homepages/fang/papers/icpp2k14a214.pdf">Grover: Looking for Performance Improvement by Disabling Local Memory Usage in OpenCL Kernels</a>
+            "<br>Jianbin Fang, Henk Sips, Pekka Jääskeläinen, Ana Lucia Varbanescu<br><i>Proceedings of the 43rd International Conference on Parallel Processing (ICPP-2014)</i>, Sep. 2014.<br><br></li>
+          <li>"<a href="http://arcade.cs.columbia.edu/parashares-europar14.pdf">ParaShares: Finding the Important Basic Blocks in Multithreaded Programs</a>
+            "<br>Melanie Kambadur, Kui Tang, and Martha Kim<br><i>International Conference on Parallel Processing (Euro-Par)</i>, Aug. 2014.<br><br></li>
+          <li>"<a href="http://link.springer.com/article/10.1007/s10766-014-0320-y">pocl: A Performance-Portable OpenCL Implementation</a>
+            "<br>Pekka Jääskeläinen, Carlos Sánchez de La Lama, Erik Schnetter, Kalle Raiskila, Jarmo Takala, Heikki Berg<br><i>International Journal of Parallel Programming (IJPP)</i>, Aug. 2014.<br><br></li>
+          <li>"<a href="http://verify.rwth-aachen.de/giesl/papers/IJCAR14-LLVM.pdf">Proving Termination and Memory Safety for Programs with Pointer Arithmetic</a>
+            "<br>Thomas Ströder, Jürgen Giesl, Marc Brockschmidt, Florian Frohn, Carsten Fuhs, Jera Hensel, and Peter Schneider-Kamp<br><i>Proceedings of the Seventh International Joint Conference on Automated Reasoning (IJCAR 2014)</i>, July 2014.<br><br></li>
+          <li>"<a href="http://soarlab.org/2014/05/smack-decoupling-source-language-details-from-verifier-implementations">SMACK: Decoupling Source Language Details from Verifier Implementations</a>
+            "<br>Zvonimir Rakamaric and Michael Emmi<br><i>Proceedings of the Twenty Sixth International Conference on Computer Aided Verification (CAV 2014)</i>, July 2014.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6888915&amp;punumber%3D6888815%26filter%3DAND%28p_IS_Number%3A6888866%29%26pageNumber%3D2">Compiler Driven Automatic Kernel Context Migration for Heterogeneous Computing</a>
+            "<br>R. Gad, T. Suss, and A. Brinkmann<br><i>Proceedings of the IEEE Thirty Fourth International Conference on Distributed Computing Systems (ICDCS)</i>, June 2014.<br><br></li>
+          <li>"<a href="https://dspace.cc.tut.fi/dpub/handle/123456789/22234">Vector Operation Support for Transport Triggered Architectures</a>
+            "<br>Mikko Järvelä<br><i>Master's Thesis</i>, Tampere University of Technology, June 2014.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2601397">LORAIN: A Step Closer to the PDES 'Holy Grail'</a>
+            "<br>Justin M. LaPre, Elsa J. Gonsiorowski, and Christopher D. Carothers<br><i>Proceedings of the Second ACM SIGSIM/PADS Conference on Principles of Advanced Discrete Simulation (SIGSIM-PADS 2014)</i>, May 2014.<br><br></li>
+          <li>"<a href="http://sva.cs.illinois.edu/pubs/KCoFI-Oakland-2014.pdf">KCoFI: Complete Control-Flow Integrity for Commodity Operating System Kernels</a>
+            "<br>John Criswell, Nathan Dautenhahn, and Vikram Adve<br><i>Proceedings of the Thirty Fifth IEEE Symposium on Security and Privacy (Oakland 2014)</i>, May 2014.<br><br></li>
+          <li>"<a href="http://www.cs.vu.nl/~giuffrida/papers/phdthesis.pdf">Safe and Automatic Live Update</a>
+            "<br>Cristiano Giuffrida<br><i>Ph.D. Dissertation,  Vrije University Amsterdam, The Netherlands</i>, Apr. 2014.<br><b>Received the 2015 EuroSys Roger Needham Award and the 2015 ACM SIGOPS Dennis M. Ritchie Doctoral Dissertation Award.</b><br><br></li>
+          <li>"<a href="http://sva.cs.illinois.edu/pubs/VirtualGhost-ASPLOS-2014.pdf">Virtual Ghost: Protecting Applications from Hostile Operating Systems</a>
+            "<br>John Criswell, Nathan Dautenhahn, and Vikram Adve<br><i>Proceedings of the Nineteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2014)</i>, Mar. 2014.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2576213&amp;dl=ACM&amp;coll=DL&amp;CFID=513590721&amp;CFTOKEN=44228041">DBILL: An Efficient and Retargetable Dynamic Binary Instrumentation Framework Using LLVM Backend</a>
+            "<br>Yi-Hong Lyu, Ding-Yong Hong, Tai-Yi Wu, Jan-Jan Wu, Wei-Chung Hsu, Pangfeng Liu, and Pen-Chung Yew<br><i>Proceedings of the Tenth ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE 2014)</i>, Mar. 2014.<br><br></li>
+          <li>"<a href="http://www.cs.rutgers.edu/~santosh.nagarakatte/papers/cgo2014-final.pdf">WatchdogLite: Hardware-Accelerated Compiler-Based Pointer Checking</a>
+            "<br>Santosh Nagarakatte, Milo M.K. Martin and Steve Zdancewic<br><i>Proceedings of the 2014 International Symposium on Code Generation and Optimization (CGO 2014)</i>, Feb. 2014.<br><br></li></ol><h2>2013</h2><ol>
+          <li>"<a href="http://dx.doi.org/10.1145/2512432">Preallocation Instruction Scheduling with Register Pressure Minimization Using a Combinatorial Optimization Approach</a>
+            "<br> Ghassan Shobaki, Maxim Shawabkeh, and Najm Abu-Rmaileh<br><i>ACM Transactions on Architecture and Code Optimization (TACO)</i>, Sep. 2013.<br><br></li>
+          <li>"<a href="http://rd.springer.com/article/10.1007/s10836-013-5405-9">LLVMVF: A Generic Approach for Verification of Multicore Software</a>
+            "<br>Marcelo Sousa, Alper Sen<br><i>Journal of Electronic Testing: Theory and Applications</i>, Sep. 2013.<br><br></li>
+          <li>"<a href="http://www.cse.lehigh.edu/~gtan/paper/strato.pdf">Strato: A Retargetable Framework for Low-level Inlined-reference Monitors</a>
+            "<br>Bin Zeng, Gang Tan, and Ulfar Erlingsson<br><i>Proceedings of the Twenty Second Usenix Security Symposium</i>, Aug. 2013.<br><br></li>
+          <li>"<a href="http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/12295-sec13-paper_haller.pdf">Dowsing for Overflows: A Guided Fuzzer to Find Buffer Boundary Violations</a>
+            "<br>Istvan Haller, Asia Slowinska, Matthias Neugschwandtner, Herbert Bos<br><i>Proceedings of the Twenty Second Usenix Security Symposium</i>, Aug. 2013.<br><br></li>
+          <li>"<a href="http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/12341-sec13-paper_davidson.pdf">FIE on Firmware: Finding Vulnerabilities in Embedded Systems Using Symbolic Execution</a>
+            "<br>Drew Davidson, Benjamin Moench, Somesh Jha, and Thomas Ristenpart<br><i>Proceedings of the Twenty Second Usenix Security Symposium</i>, Aug. 2013.<br><br></li>
+          <li>"<a href="http://www.cs.rutgers.edu/~santosh.nagarakatte/pldi2013.pdf">Formal Verification of SSA Optimizations for LLVM</a>
+            "<br>Jianzhou Zhao, Santosh Nagarakatte, Milo M K Martin, and Steve Zdancewic<br><i>Proceedings of the Thirty Fourth ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2013)</i>, June 2013.<br><br></li>
+          <li>"<a href="http://www.cl.cam.ac.uk/research/security/ctsrd/pdfs/201305-temporal-practical-capabilities.pdf">Declarative, Temporal, and Practical Programming with Capabilities</a>"<br>William R. Harris, Somesh Jha, Thomas Reps, Jonathan Anderson, and Robert N. M. Watson<br><i>Proceedings of the Thirty Fourth IEEE Symposium on Security and Privacy (Oakland 2013)</i>, May 2013.<br><br></li>
+          <li>"<a href="http://infoscience.epfl.ch/record/186012?ln=en">-Overify: Optimizing Programs for Fast Verification</a>
+            "<br>Jonas Wagner, Volodymyr Kuznetsov, and George Candea<br><i>Proceedings of the Fourteenth Workshop on Hot Topics in Operating Systems (HotOS XIV)</i>, May 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2465380">A Compiler-Level Intermediate Representation Based Binary Analysis and Rewriting System</a>
+            "<br>Kapil Anand, Matthew Smithson, Khaled Elwazeer, Aparna Kotha, Jim Gruen, Nathan Giles, and Rajeev Barua<br><i>Proceedings of the Eighth ACM European Conference on Computer Systems (Eurosys 2013)</i>, Apr. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451131">Using Likely Invariants for Automated Software Fault Localization</a>
+            "<br>Swarup Kumar Sahoo, John Criswell, Chase Geigle, and Vikram Adve<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451147">Safe and Automatic Live Update for Operating Systems</a>
+            "<br>Cristiano Giuffrida, Anton Kuijsten, and Andrew S. Tanenbaum<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451120&amp;CFID=194387348&amp;CFTOKEN=71893868">Parallelizing Data Race Detection</a>
+            "<br>Benjamin Wester, David Devecsery, Peter M. Chen, Jason Flinn, and Satish Narayanasamy<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451121&amp;CFID=194387348&amp;CFTOKEN=71893868">Cooperative Empirical Failure Avoidance for Multithreaded Programs</a>
+            "<br>Brandon Lucia and Luis Ceze<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451129&amp;CFID=194387348&amp;CFTOKEN=71893868">ConAir: Featherweight Concurrency Bug Recovery via Single-Threaded Idempotent Execution</a>
+            "<br>Wei Zhang, Marc de Kruijf, Ang Li, Shan Lu, and Karthikeyan Sankaralingam<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451136&amp;CFID=194387348&amp;CFTOKEN=71893868">DeAliaser: Alias Speculation using Atomic Region Support</a>
+            "<br>Wonsun Ahn, Yuelu Duan, and Josep Torrellas<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451141&amp;CFID=194387348&amp;CFTOKEN=71893868">STABILIZER: Statistically Sound Performance Evaluation</a>
+            "<br>Charlie Curtsinger and Emery D. Berger<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451152&amp;CFID=194387348&amp;CFTOKEN=71893868">Verifying Systems Rules Using Rule-Directed Symbolic Execution</a>
+            "<br>Heming Cui, Gang Hu, Jingyue Wu, and Junfeng Yang<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2451161&amp;CFID=194387348&amp;CFTOKEN=71893868">Practical Automatic Loop Specialization</a>
+            "<br>Taewook Oh, Hanjun Kim, Nick P. Johnson, Jae W. Lee, and David I. August<br><i>Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2013)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://link.springer.com/chapter/10.1007/978-3-642-37051-9_8">Architecture-Independent Dynamic Information Flow Tracking</a>
+            "<br>Ryan Whelan, Tim Leek, and David Kaeli<br><i>Proceedings of the 22nd International Conference on Compiler Construction (CC '13)</i>, Mar. 2013.<br><br></li>
+          <li>"<a href="http://www.ics.uci.edu/~ahomescu/multicompiler_cgo13.pdf">Profile-guided Automated Software Diversity</a>
+            "<br>Andrei Homescu, Steven Neisius, Per Larsen, Stefan Brunthaler, and Michael Franz<br><i>Proceedings of the 2013 International Symposium on Code Generation and Optimization (CGO 2013)</i>, Feb. 2013.<br><br></li></ol><h2>2012</h2><ol>
+          <li>"<a href="http://dl.acm.org/citation.cfm?id=2380498">Generation of TLM Testbenches Using Mutation Testing</a>
+            "<br> Marcelo Sousa and Alper Sen<br><i>IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis</i>, Sep. 2012.<br><br></li>
+          <li>"<a href="http://erllvm.softlab.ntua.gr/files/erlang03-sagonas.pdf">ErLLVM: An LLVM backend for Erlang</a>
+            "<br>K. Sagonas, C. Stavrakakis, and Y. Tsiouris<br><i>ACM SIGPLAN Erlang Workshop</i>, Sep. 2012.<br><br></li>
+          <li>"<a href="http://igitur-archive.library.uu.nl/student-theses/2012-0925-200740/UUindex.html">A Framework for Formal Verification of Concurrent Software</a>
+            "<br> Marcelo Sousa<br><i>MSc Thesis</i>, Aug. 2012.<br><br></li>
+          <li>"<a href="https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final181.pdf">Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization</a>
+            "<br>Cristiano Giuffrida, Anton Kuijsten, and Andrew S. Tanenbaum<br><i>Twenty First Usenix Security Symposium</i>, Aug. 2012.<br><br></li>
+          <li>"<a href="http://arcade.cs.columbia.edu/harmony-isca12.pdf">Harmony: Collection and Analysis of Parallel Block Vectors</a>
+            "<br>Melanie Kambadur, Kui Tang, and Martha Kim<br><i>Proceedings of the International Symposium on Computer Architecture (ISCA '12)</i>, June 2012.<br><b>Top Picks in Computer Architecture Selection.</b><br><br></li>
+          <li>"<a href="http://www.cs.vu.nl/~giuffrida/papers/hotswup-2012.pdf">Safe and Automated State Transfer for Secure and Reliable Live Update</a>
+            "<br>Cristiano Giuffrida and Andrew S. Tanenbaum<br><i>Proc. of the Fourth International Workshop on Hot Topics in Software Upgrades (HotSWUp '12)</i>, June 2012.<br><br></li>
+          <li>"<a href="http://systems.cs.columbia.edu/archive/pub/2012/06/sound-and-precise-analysis-of-parallel-programs-through-schedule-specialization/">Sound and Precise Analysis of Parallel Programs through Schedule Specialization</a>
+            "<br>Jingyue Wu, Yang Tang, Gang Hu, Heming Cui, and Junfeng Yang<br><i>ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>, June 2012.<br><br></li>
+          <li>"<a href="https://www.usenix.org/conference/usenixfederatedconferencesweek/addresssanitizer-fast-address-sanity-checker">AddressSanitizer: A Fast Address Sanity Checker</a>
+            "<br>Konstantin Serebryany, Derek Bruening, Alexander Potapenko, Dmitry Vyukov<br><i>Proc. of the 2012 USENIX Annual Technical Conference</i>, June 2012.<br><br></li>
+          <li>"<a href="2012-06-08-ICSE-UnderstandingIntegerOverflow.html">Understanding Integer Overflow in C/C++</a>"<br>Will Dietz, Peng Li, John Regehr, Vikram Adve<br><i>Proc. of the 2012 International Conference on Software Engineering (ICSE'12)</i>, June 2012.<br><b>Received an ACM SIGSOFT Distinguished Paper Award.</b><br><br></li>
+          <li>"<a href="https://dl.acm.org/citation.cfm?id=2342821.2342828">The Click2NetFPGA toolchain</a>
+            "<br>Teemu Rinta-Aho, Mika Karlstedt, and Madhav P. Desai<br><i>Proceedings of the 2012 USENIX Annual Technical Conference</i>, Boston, MA, June 2012.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6270679&amp;isnumber=6270391">A Compiler Back-End for Reconfigurable, Mixed-ISA Processors with Clustered Register Files</a>
+            "<br>Stripf, T.; Koenig, R.; Rieder, P.; Becker, J.;<br><i>Parallel and Distributed Processing Symposium Workshops &amp; PhD Forum (IPDPSW), 2012 IEEE 26th International</i>, May 2012.<br><br></li>
+          <li>"<a href="2012-05-13-InPar-ispc.html">ispc: A SPMD Compiler for High-Performance CPU Programming</a>
+            "<br>Matt Pharr and William R. Mark<br><i>Innovative Parallel Computing (InPar)</i>, May 2012.<br><br></li>
+          <li>"<a href="http://www.cs.utah.edu/fv/pdf/PPoPP12-GKLEE-Extended-Version.pdf">GKLEE: Concolic Verification and Test Generation for GPUs</a>
+            "<br>Guodong Li, Peng Li, Geof Sawaya, Ganesh Gopalakrishnan, Indradeep Ghosh, Sreeranga P. Rajan<br><i>Principles and Practices of Parallel Programming (PPoPP)</i>, Feb. 2012.<br><br></li>
+          <li>"<a href="http://www.cis.upenn.edu/~stevez/papers/ZNMZ12.pdf">Formalizing the LLVM Intermediate Representation for Verified Program Transformations</a>
+            "<br>Jianzhou Zhao, Santosh Nagarakatte, Milo M. K. Martin, Steve Zdancewic<br><i>SIGACT Symposium on Principles of Programming Languages (POPL)</i>, Jan. 2012.<br><br></li></ol><h2>2011</h2><ol>
+          <li>"<a href="http://systems.cs.columbia.edu/files/wpid-peregrine-sosp11.pdf">Efficient Deterministic Multithreading through Schedule Relaxation</a>
+            "<br>Heming Cui, Jingyue Wu, John Gallagher, Huayang Guo, Junfeng Yang<br><i>ACM Symposium on Operating Systems Principles (SOSP)</i>, Oct. 2011.<br><br></li>
+          <li>"<a href="http://www.eecs.harvard.edu/~greg/papers/cfiDataSandboxing.pdf">Combining Control-Flow Integrity and Static Analysis for Efficient and Validated Data Sandboxing</a>
+            "<br>Bin Zeng, Gang Tan, Greg Morrisett<br><i>ACM Conference on Computer and Communications Security (CCS)</i>, Oct. 2011.<br><br></li>
+          <li>"Debugging the Data Plane with Anteater" <a href="http://www.google.com/search?q=Debugging%20the%20Data%20Plane%20with%20Anteater">search</a><br>Haohui Mai, Ahmed Khurshid, Rachit Agarwal, Matthew Caesar, P. Brighten Godfrey, and Samuel T. King<br><i>Annual Conference of the ACM Special Interest Group on Data Communication (SIGCOMM)</i>, Aug. 2011.<br><br></li>
+          <li>"<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6045457&amp;isnumber=6045429">A novel ADL-based compiler-centric software framework for reconfigurable mixed-ISA processors</a>
+            "<br>Stripf, T.; Koenig, R.; Becker, J.;<br><i>Embedded Computer Systems (SAMOS), 2011 International Conference</i>, July 2011.<br><br></li>
+          <li>"<a href="http://www.hipeac.net/system/files?file=standaloneopencl.pdf">OpenCL-based Design Methodology for Application-Specific Processors</a>
+            "<br>Pekka Jääskeläinen, Carlos S. de La Lama, Pablo Huerta, and Jarmo Takala<br><i>Transactions on HiPEAC</i>, July 2011.<br><br></li>
+          <li>"<a href="http://dslab.epfl.ch/pubs/revgen.pdf">Enabling Sophisticated Analysis of x86 Binaries with RevGen</a>
+            "<br>Vitaly Chipounov and George Candea<br><i>Seventh Workshop on Hot Topics in System Dependability (HotDep)</i>, June 2011.<br><br></li>
+          <li>"<a href="http://llvm-md.org/pldi.pdf">Evaluating Value-Graph Translation Validation for LLVM</a>
+            "<br>Jean-Baptiste Tristan, Paul Govereau, Greg Morrisett<br><i>ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>, June 2011.<br><br></li>
+          <li>"<a href="http://liberty.princeton.edu/Publications/index.php?abs=1&amp;setselect=pldi11_cuda">Automatic CPU-GPU Communication Management and Optimization</a>
+            "<br>Thomas B. Jablin, Prakash Prabhu, James A. Jablin, Nick P. Johnson, Stephen R. Beard, and David I. August<br><i>ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>, June 2011.<br><br></li>
+          <li>"<a href="http://liberty.princeton.edu/Publications/index.php?abs=1&amp;setselect=pldi11_commset">Commutative Set: A Language Extension for Implicit Parallel Programming</a>
+            "<br>Prakash Prabhu, Soumyadeep Ghosh, Yun Zhang, Nick P. Johnson, and David I. August<br><i>ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)</i>, June 2011.<br><br></li>
+          <li>"On the Theory and Potential of LRU-MRU Collaborative Cache Management" <a href="http://www.google.com/search?q=On%20the%20Theory%20and%20Potential%20of%20LRU-MRU%20Collaborative%20Cache%20Management">search</a><br>Xiaoming Gu and Chen Ding<br><i>International Symposium on Memory Management (ISMM)</i>, June 2011.<br><br></li>
+          <li>"<a href="http://homepages.uni-paderborn.de/mgrad/Mariusz_Grad_Homepage/Publications_files/grad11_raw_paper.pdf">Just-in-time Instruction Set Extension - Feasibility and Limitations for an FPGA-based Reconfigurable ASIP Architecture</a>
+            "<br>Mariusz Grad and Christian Plessl<br><i>Reconfigurable Architectures Workshop (RAW 2011), Proceedings of the International Parallel and Distributed Processing Symposium</i>, Anchorage, Alaska, USA., May 2011.<br><br></li>
+          <li>"A Predictable Execution Model for COTS-Based Embedded Systems" <a href="http://www.google.com/search?q=A%20Predictable%20Execution%20Model%20for%20COTS-Based%20Embedded%20Systems">search</a><br>Rodolfo Pellizzoni, Emiliano Betti, Stanley Bak, Gang Yao, John Criswell, Marco Caccamo, and Russell Kegley<br><i>Real-Time and Embedded Technology and Applications Symposium (RTAS)</i>, Apr. 2011.<br><br></li>
+          <li>"Flow-Sensitive Pointer Analysis for Millions of Lines of Code" <a href="http://www.google.com/search?q=Flow-Sensitive%20Pointer%20Analysis%20for%20Millions%20of%20Lines%20of%20Code">search</a><br>Ben Hardekopf and Calvin Lin<br><i>International Symposium on Code Generation and Optimization (CGO)</i>, Apr. 2011.<br><br></li>
+          <li>"Whole-Function Vectorization" <a href="http://www.google.com/search?q=Whole-Function%20Vectorization">search</a><br>Ralf Karrenberg<br><i>International Symposium on Code Generation and Optimization (CGO)</i>, Apr. 2011.<br><br></li>
+          <li>"<a href="http://dslab.epfl.ch/pubs/s2e.pdf">S2E: A Platform for In-Vivo Multi-Path Analysis of Software Systems</a>"<br>Vitaly Chipounov, Volodymyr Kuznetsov, and George Candea<br><i>Proceedings of the Sixteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2011)</i>, Mar. 2011.<br><br></li>
+          <li>"<a href="http://dx.doi.org/10.1002/spe.1059">A study of irreducibility in C programs</a>
+            "<br>James Stanier and Des Watson<br><i>Software: Practice and Experience</i>, Mar. 2011.<br><br></li>
+          <li>"<a href="2011-02-FOSDEM-LLVMAndClang.html">LLVM and Clang: Advancing Compiler Technology</a>
+            "<br>Chris Lattner<br><i>Keynote Talk, <a href="http://fosdem.org/2011/">FOSDEM 2011</a>: Free and Open Source Developers European Meeting</i>, Brussels, Belgium, Feb. 2011.<br><br></li></ol><h2>2010</h2><ol>
+          <li>"<a href="http://homepages.uni-paderborn.de/mgrad/Mariusz_Grad_Homepage/Publications_files/grad10_reconfig_paper.pdf">Pruning the Design Space for Just-in-time Processor Customization</a>
+            "<br>Mariusz Grad and Christian Plessl<br><i>Proceedings of the International Conference on Reconfigurable Computing (ReConFig 2010)</i>, Cancun, Mexico, Dec. 2010.<br><br></li>
+          <li>"<a href="2010-12-Preuss-PathProfiling.html">Implementation of Path Profiling in the Low-Level Virtual-Machine (LLVM) Compiler Infrastructure</a>
+            "<br>Adam Preuss<br><i>Technical Report #10-05, University of Alberta</i>, Alberta, Canada, Dec. 2010.<br><br></li>
+          <li>"<a href="2010-10-HotDep-CrashRecovery.html">We Crashed, Now What?</a>
+            "<br>Cristiano Giuffrida, Lorenzo Cavallaro, and Andrew S. Tanenbaum<br><i>Proc. of the 6th Workshop on Hot Topics in System Dependability (HotDep '10)</i>, Vancouver, BC, Canada, Oct. 2010.<br><br></li>
+          <li>"<a href="2010-10-OSDI-DeterministicMT.html">Stable Deterministic Multithreading through Schedule Memoization</a>
+            "<br>Heming Cui and Jingyue Wu and Chia-che Tsai and Junfeng Yang<br><i>Proc. of the Ninth Symposium on Operating Systems Design and Implementation (OSDI '10)</i>, Vancouver, BC, Canada, Oct. 2010.<br><br></li>
+          <li>"<a href="2010-10-OSDI-BypassingRaces.html">Bypassing Races in Live Applications with Execution Filters</a>"<br>Jingyue Wu, Heming Cui, Junfeng Yang<br><i>Proc. of the Ninth Symposium on Operating Systems Design and Implementation (OSDI '10)</i>, Vancouver, BC, Canada, Oct. 2010.<br><br></li>
+          <li>"<a href="2010-09-HASKELLSYM-LLVM-GHC.html">An LLVM Backend for GHC</a>"<br>David A. Terei and Manuel M. T. Chakravarty<br><i>ACM SIGPLAN Haskell Symposium 2010</i>, Baltimore, Maryland, Sep. 2010.<br><br></li>
+          <li>"<a href="2010-09-ESORICS-FixOverflows.html">IntPatch: Automatically Fix Integer-Overflow-to-Buffer-Overflow Vulnerability at Compile-Time</a>
+            "<br>Chao Zhang, Tielei Wang, Tao Wei, Yu Chen, and Wei Zou<br><i>Proc. of the 15th European Symposium on Research in Computer Security (ESORICS 2010)</i>, Athen, Greece, Sep. 2010.<br><br></li>
+          <li>"<a href="2010-08-SBLP-SSI.html">Efficient SSI Conversion</a>
+            "<br>André Tavares, Fernando Magno Pereira, Mariza Bigonha and Roberto Bigonha<br><i>Brazilian Symposium on Programming Languages 2010</i>, Salvador, Brazil, Sep. 2010.<br><br></li>
+          <li>"<a href="https://doi.org/10.1109/DSD.2010.52">A C-to-RTL Flow as an Energy Efficient Alternative to Embedded Processors in Digital Systems</a>
+            "<br>Sameer D. Sahasrabuddhe, Sreenivas Subramanian, Kunal P. Ghosh, Kavi Arya, and Madhav P. Desai<br><i>13th Euromicro Conference on Digital System Design: Architectures, Methods and Tools</i>, Lille, France, Sep. 2010.<br><br></li>
+          <li>"<a href="http://www.rinta-aho.org/papers/NetFPGA2010-Cmb-nikander.pdf">Towards Software-defined Silicon: Experiences in Compiling Click to NetFPGA</a>
+            "<br>James Kempf, Pekka Nikander, Sameer D. Sahasrabuddhe, Teemu Rinta-aho, and Benny Nyman<br><i>1st European NetFPGA Developers Workshop</i>, University of Cambridge, UK, Sep. 2010.<br><br></li>
+          <li>"<a href="2010-07-CAV-LazyAnnot.html">Lazy Annotation for Program Testing and Verification</a>
+            "<br>Kenneth McMillan<br><i>Proceedings of Computer Aided Verification (CAV 2010)</i>, Edinburgh, UK, July 2010.<br><br></li>
+          <li>"<a href="2010-06-ISCA-Relax.html">Relax: An Architectural Framework for Software Recovery of Hardware Faults</a>
+            "<br>M. de Kruijf, S. Nomura, and K.Sankaralingam<br><i>ISCA '10: International Symposium on Computer Architecture</i>, June 2010.<br><br></li>
+          <li>"<a href="2010-06-ISMM-SpeculativeParallelization.html">Speculative Parallelization Using State Separation and Multiple Value Prediction</a>
+            "<br>Chen Tian, Min Feng, Rajiv Gupta<br><i>Proc. of the 2010 International Symposium on Memory Management</i>, June 2010.<br><br></li>
+          <li>"<a href="2010-06-ISMM-CETS.html">CETS: Compiler Enforced Temporal Safety for C</a>
+            "<br>Santosh Nagarakatte, Jianzhou Zhao, Milo M K Martin and Steve Zdancewic<br><i>Proc. of the 2010 International Symposium on Memory Management</i>, June 2010.<br><br></li>
+          <li>"<a href="2010-06-06-Clang-LLVM.html">Clang/LLVM Maturity Report</a>
+            "<br>Dominic Fandrey<br><i>Proceedings of the Summer 2010 Research Seminar</i>, June 2010.<br><br></li>
+          <li>"<a href="2010-05-Oakland-HyperSafe.html">HyperSafe: A Lightweight Approach to Provide Lifetime Hypervisor Control-Flow Integrity</a>
+            "<br>Zhi Wang and Xuxian Jiang<br><i>IEEE Symposium on Security &amp; Privacy 2010</i>, May 2010.<br><br></li>
+          <li>"<a href="2010-05-01-ClangBSD.html">ClangBSD</a>"<br>Roman Divacky<br><i>BSDcan 2010</i>, May 2010.<br><br></li>
+          <li>"<a href="2010-05-ICSE-QualityOfService.html">Quality of Service Profiling</a>
+            "<br>Sasa Misailovic, Stelios Sidiroglou, Henry Hoffmann, Martin Rinard<br><i>Proc. of the 2010 IEEE 32st International Conference on Software Engineering (ICSE'10)</i>, Cape Town, South Africa, May 2010.<br><br></li>
+          <li>"<a href="2010-04-EUROSYS-DresdenTM.html">Evaluation of AMD's Advanced Synchronization Facility within a Complete Transactional Memory Stack</a>
+            "<br>Dave Christie, Jae-Woong Chung, et al<br><i>Proc. of the 5th ACM European Conference on Computer Systems (EuroSys'10)</i>, Paris, France, Apr. 2010.<br><br></li>
+          <li>"<a href="2010-04-EUROSYS-Returnless.html">Defeating Return-Oriented Rootkits with "Return-Less" Kernels</a>
+            "<br>Jinku Li, Zhi Wang, Xuxian Jiang, Michael Grace, and Sina Bahram<br><i>Proc. of the 5th ACM European Conference on Computer Systems (EuroSys'10)</i>, Paris, France, Apr. 2010.<br><br></li>
+          <li>"<a href="2010-04-EUROSYS-RevNIC.html">Reverse Engineering of Binary Device Drivers with RevNIC</a>
+            "<br>Vitaly Chipounov and George Candea<br><i>Proc. of the 5th ACM European Conference on Computer Systems (EuroSys'10)</i>, Paris, France, Apr. 2010.<br><br></li>
+          <li>"<a href="2010-04-EUROSYS-ExecutionSynthesis.html">Execution Synthesis: A Technique for Automated Software Debugging</a>
+            "<br>Cristian Zamfir and George Candea<br><i>Proc. of the 5th ACM European Conference on Computer Systems (EuroSys'10)</i>, Paris, France, Apr. 2010.<br><br></li>
+          <li>"<a href="2010-04-NeustifterProfiling.html">Efficient Profiling in the LLVM Compiler Infrastructure</a>
+            "<br>Andreas Neustifter<br><i>Masters Thesis</i>, Vienna University of Technology, Apr. 2010.<br><br></li>
+          <li>"<a href="2010-03-VEE-VMKit.html">VMKit: a Substrate for Managed Runtime Environments</a>
+            "<br>Nicolas Geoffray, Gael Thomas, Julia Lawall, Gilles Muller, and Bertil Folliot<br><i>Proc. of the Virtual Execution Environments Conference (VEE '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-03-GPGPU-ModelingGPGPU.html">Modeling GPU-CPU Workloads and Systems</a>
+            "<br>Andrew Kerr, Gregory Diamos, and Sudhakar Yalamanchili<br><i>Proc. of the 3rd Workshop on General-Purpose Computation on Graphics Processing Units (GPGPU-3)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-03-ASPLOS-Shoestring.html">Shoestring: Probabilistic Soft Error Reliability on the Cheap</a>
+            "<br>Shuguang Feng, Shantanu Gupta, Amin Ansari, and Scott Mahlke<br><i>Proc. of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-03-ASPLOS-Orthrus.html">Orthrus: Efficient Software Integrity Protection on Multi-core</a>
+            "<br>Ruirui Huang, Daniel Y. Deng, G. Edward Suh<br><i>Proc. of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-03-ASPLOS-ConservationCores.html">Conservation Cores: Reducing the Energy of Mature Computations</a>
+            "<br>Ganesh Venkatesh, Jack Sampson, Nathan Goulding, Saturnino Garcia, Vladyslav Bryksin, Jose Lugo-Martinez, Steven Swanson, Michael Bedford Taylor<br><i>Proc. of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-03-ASPLOS-SpeculativeParallelization.html">Speculative Parallelization using Software Multi-Threaded Transactions</a>
+            "<br>Arun Raman, Hanjun Kim, Thomas R. Mason, Thomas B. Jablin, David I. August<br><i>Proc. of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-04-ASPLOS-DeterministicCompiler.html">CoreDet: A Compiler and Runtime System for Deterministic Multithreaded Execution</a>
+            "<br>Tom Bergan, Owen Anderson, Joseph Devietti, Luis Ceze, and Dan Grossman<br><i>Proc. of the Fifteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '10)</i>, Pittsburgh, PA, Mar. 2010.<br><br></li>
+          <li>"<a href="2010-02-FPGA-BitLevel.html">Bit-Level Optimization for High-Level Synthesis and FPGA-Based Acceleration</a>
+            "<br>Jiyu Zhang, Zhiru Zhang, Sheng Zhou, Mingxing Tan, Xianhua Liu, Xu Cheng, Jason Cong<br><i>Proc. of the 18th Annual ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA'10)</i>, Monterey, CA, Feb. 2010.<br><br></li>
+          <li>"<a href="2010-02-IPSJ-CustomInstruction.html">Custom Instruction Generation for Configurable Processors with Limited Numbers of Operands</a>
+            "<br>Kenshu Seto and Masahiro Fujita<br><i>IPSJ Transactions on System LSI Design Methodology</i>, Feb. 2010.<br><br></li>
+          <li>"<a href="2010-01-Wennborg-Thesis.html">Emulator Speed-up Using JIT and LLVM</a>
+            "<br>Hans Wennborg<br><i>Master's Thesis, Lund University</i>, Lund, Sweden, Jan. 2010.<br><br></li></ol><h2>2009</h2><ol>
+          <li>"<a href="2009-12-MICRO-DDT.html">DDT: Design and Evaluation of a Dynamic Program Analysis for Optimizing Data Structure Usage</a>
+            "<br>Changhee Jung, Nathan Clark<br><i>Proc. of the 42nd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO-42)</i>, New York, NY, Dec. 2009.<br><br></li>
+          <li>"<a href="2009-10-LCPC-DataRestructuring.html">Automatic Restructuring of Linked Data Structures</a>
+            "<br>H.L.A. van der Spek, C.W.M. Holm and H.A.G. Wijshof<br><i>Proc. of the 22nd International Workshop on Languages and Compilers for Parallel Computing (LCPC'09)</i>, Newark, DE, Oct. 2009.<br><br></li>
+          <li>"<a href="2009-10-TereiThesis.html">Low Level Virtual Machine for Glasgow Haskell Compiler</a>
+            "<br>David Terei<br><i>Bachelor's Thesis, Computer Science and Engineering Dept., The University of New South Wales</i>, Sydney, Australia, Oct. 2009.<br><br></li>
+          <li>"<a href="2009-10-CASES-ProgressiveSpill.html">Progressive spill code placement</a>
+            "<br>Dietmar Ebner, Bernhard Scholz, and Andreas Krall<br><i>Proc. of the 2009 international conference on Compilers, architecture, and synthesis for embedded systems (CASES'09)</i>, Grenoble, France, Oct. 2009.<br><br></li>
+          <li>"<a href="2009-10-CODES-TotalProf.html">TotalProf: a fast and accurate retargetable source code profiler</a>
+            "<br>Lei Gao, Jia Huang, Jianjiang Ceng, Rainer Leupers, Gerd Ascheid, and Heinrich Meyr<br><i>Proc. of the 7th IEEE/ACM international conference on Hardware/software codesign and system synthesis (CODES+ISSS'09)</i>, Grenoble, France, Oct. 2009.<br><br></li>
+          <li>"<a href="2009-10-CODES-MPSoC.html">A High-Level Virtual Platform for Early MPSoC Software Development</a>
+            "<br>Jianjiang Ceng, Weihua Sheng, Jeronimo Castrillon, Anastasia Stulova, Rainer Leupers, Gerd Ascheid and Heinrich Meyr<br><i>Proc. of the 7th IEEE/ACM international conference on Hardware/software codesign and system synthesis (CODES+ISSS'09)</i>, Grenoble, France, Oct. 2009.<br><br></li>
+          <li>"AN-Encoding Compiler: Building Safety-Critical Systems with Commodity Hardware" <a href="http://www.google.com/search?q=AN-Encoding%20Compiler%3A%20Building%20Safety-Critical%20Systems%20with%20Commodity%20Hardware">search</a><br>Christof Fetzer, Ute Schiffel, and Martin SuBkraut<br><i>28th International Conference, SAFECOMP 2009</i>, Hamburg, Germany, Sep. 2009.<br><br></li>
+          <li>"Performance Modelling for Avionics Systems" <a href="http://www.google.com/search?q=Performance%20Modelling%20for%20Avionics%20Systems">search</a><br>Visar Januzaj, Ralf Mauersberger and Florian Biechele<br><i>Computer Aided Systems Theory (EUROCAST 2009)</i>, , Sep. 2009.<br><br></li>
+          <li>"Automatic Generation of Cycle-Approximate TLMs with Timed RTOS Model Support" <a href="http://www.google.com/search?q=Automatic%20Generation%20of%20Cycle-Approximate%20TLMs%20with%20Timed%20RTOS%20Model%20Support">search</a><br>Yonghyun Hwang, Gunar Schirner, and Samar Abdi<br><i>Analysis, Architectures and Modelling of Embedded Systems 2009 (IESS 2009)</i>, Langenargen, Germany, Sep. 2009.<br><br></li>
+          <li>"<a href="2009-09-SBCCI.html">An Early Real-Time Checker for Retargetable Compile-Time Analysis</a>
+            "<br>Emilio Wuerges, Luiz C. V. dos Santos, Olinto Furtado, and Sandro Rigo<br><i>Proc. of the 22nd Annual Symposium on Integrated Circuits and System Design (SBCCI'09)</i>, Natal, Brazil, Sep. 2009.<br><br></li>
+          <li>"<a href="2009-08-EUROPAR-Blame.html">Assigning Blame: Mapping Performance to High Level Parallel Programming Abstractions</a>
+            "<br>Nick Rutar and Jeffrey K. Hollingsworth<br><i>EuroPar'09</i>, Delft, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-FSE-Altair.html">API hyperlinking via structural overlap</a>
+            "<br>Fan Long, Xi Wang, and Yang Cai<br><i>Proc. of the ACM symposium on The foundations of software engineering symposium (FSE'09)</i>, Amsterdam, The Netherlands, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-SAS-IPSSA.html">Increasing the scope and resolution of Interprocedural Static Single Assignment</a>
+            "<br>Silvian Calman and Jianwen Zhu<br><i>Proc. of the 16th International Static Analysis Symposium (SAS 2009)</i>, Los Angeles, CA, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-12-UsenixSecurity-SafeSVAOS.html">Memory Safety for Low-Level Software/Hardware Interactions</a>
+            "<br>John Criswell, Nicolas Geoffray, and Vikram Adve<br><i>Proc. of the Eighteenth Usenix Security Symposium</i>, Montreal, Canada, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-Zoltar.html">Zoltar: a spectrum-based fault localization tool</a>
+            "<br>Tom Janssen, Rui Abreu, and Arjan J.C. van Gemund<br><i>Proc. of the 2009 ESEC/FSE workshop on Software integration and evolution @ runtime</i>, Amsterdam, The Netherlands, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-ISLPED.html">Behavior-Level Observability Don't-Cares and Application to Low-Power Behavioral Synthesis</a>
+            "<br>Jason Cong, Bin Liu, Zhiru Zhang<br><i>Proc. of the 14th ACM/IEEE international symposium on Low power electronics and design (ISLPED'09)</i>, San Francisco, CA, Aug. 2009.<br><br></li>
+          <li>"<a href="2009-08-RehmeThesis.html">An Internal Representation for Adaptive Online Parallelization</a>
+            "<br>Koy D. Rehme<br><i>M.S. Thesis, Brigham Young University</i>, USA, Aug. 2009.<br><br></li>
+          <li>"<a href="http://homepages.uni-paderborn.de/mgrad/Mariusz_Grad_Homepage/Publications_files/grad09_ersa_paper.pdf">Woolcano: An Architecture and Tool Flow for Dynamic Instruction Set Extension on Xilinx Virtex-4 FX</a>
+            "<br>Mariusz Grad and Christian Plessl<br><i>Proceedings of the International Conference on Engineering of Reconfigurable Systems and Algorithms (ERSA 2009)</i>, Las Vegas, Nevada, USA, July 2009.<br><br></li>
+          <li>"<a href="2009-07-ISSTA-BegBunch.html">BegBunch: benchmarking for C bug detection tools</a>
+            "<br>Cristina Cifuentes, Christian Hoermann, Nathan Keynes, Lian Li, Simon Long, Erica Mealy, Michael Mounteney, and Bernhard Scholz<br><i>Proc. of the 2nd International Workshop on Defects in Large Software Systems: Held in conjunction with the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2009)</i>, Chicago, Illinois, July 2009.<br><br></li>
+          <li>"Verifying the Implementation of an Operating System Scheduler" <a href="http://www.google.com/search?q=Verifying%20the%20Implementation%20of%20an%20Operating%20System%20Scheduler">search</a><br>Moritz Kleine, Bjorn Bartels, Thomas Gothel, and Sabine Glesner<br><i>IEEE International Symposium on Theoretical Aspects of Software Engineering</i>, Tianjin, China, July 2009.<br><br></li>
+          <li>"Programmable and Scalable Architecture for Graphics Processing Units" <a href="http://www.google.com/search?q=Programmable%20and%20Scalable%20Architecture%20for%20Graphics%20Processing%20Units">search</a><br>Carlos S. Lama, Pekka Jaaskelainen, Jarmo Takala<br><i>Proc. of the 9th International Workshop on Embedded Computer Systems: Architectures, Modeling, and Simulation</i>, Samos, Greece, July 2009.<br><br></li>
+          <li>"<a href="2009-07-Karrenberg-Thesis.html">Automatic Packetization</a>
+            "<br>Ralf Karrenberg<br><i>Master's Thesis, Universität des Saarlandes</i>, Saarbrücken, Germany, July 2009.<br><br></li>
+          <li>"<a href="2009-06-DSReplacement.html">Toward Automatic Data Structure Replacement for Effective Parallelization</a>
+            "<br>Changhee Jung and Nathan Clark<br><i>Proc. Workshop on Parallel Execution of Sequential Programs on Multicore Architectures (PESPMA'09)</i>, , June 2009.<br><br></li>
+          <li>"<a href="2009-06-MansinghkaThesis.html">Natively Probabilistic Computation</a>
+            "<br>Vikash Kumar Mansinghka<br><i>Ph.D. Thesis,  Massachusetts Institute of Technology</i>, USA, June 2009.<br><br></li>
+          <li>"<a href="2009-06-PLDI-Parallelizing.html">Parallelizing sequential applications on commodity hardware using a low-cost software transactional memory</a>
+            "<br>Mojtaba Mehrara, Jeff Hao, Po-Chun Hsu, and Scott Mahlke<br><i>Proc. ACM SIGPLAN 2009 Conference on Programming Language Design and Implementation (PLDI'09)</i>, Dublin, Ireland, June 2009.<br><br></li>
+          <li>"<a href="2009-06-PLDI-LibraryBindings.html">Automatic generation of library bindings using static analysis</a>
+            "<br>Tristan Ravitch, Steve Jackson, Eric Aderhold, and Ben Liblit<br><i>Proc. ACM SIGPLAN 2009 Conference on Programming Language Design and Implementation (PLDI'09)</i>, Dublin, Ireland, June 2009.<br><br></li>
+          <li>"<a href="2009-06-PLDI-SoftBound.html">SoftBound: Highly Compatible and Complete Spatial Memory Safety for C</a>
+            "<br>Santosh Nagarakatte, Jianzhou Zhao, Milo M K Martin and Steve Zdancewic<br><i>Proc. ACM SIGPLAN 2009 Conference on Programming Language Design and Implementation (PLDI'09)</i>, Dublin, Ireland, June 2009.<br><br></li>
+          <li>"<a href="2009-06-ISC-DataMiningOnGPUs.html">A Translation System for Enabling Data Mining Applications on GPUs</a>
+            "<br>Wenjing Ma and Gagan Agrawal<br><i>Proc. 23rd International Conference on Supercomputing (ISC'09)</i>, Yorktown Heights, NY, June 2009.<br><br></li>
+          <li>"<a href="2009-06-HotDep-SymbolicExec.html">Selective Symbolic Execution</a>
+            "<br>Vitaly Chipounov, Vlad Georgescu, Cristian Zamfir, and George Candea<br><i>Proc. Fifth Workshop on Hot Topics in System Dependability (HotDep'09)</i>, Lisbon, Portugal, June 2009.<br><br></li>
+          <li>"<a href="2009-06-27-edwin.html">Interprocedural bounds checker for C programs using symbolic constraints and slicing</a>
+            "<br>Edvin Török<br><i>Undergraduate Thesis, 'Politehnica' University of Timisoara</i>, Timisoara, Romania, June 2009.<br><br></li>
+          <li>"<a href="2009-06-JPP-SpeculativeParallel.html">Speculative Parallelization of Sequential Loops on Multicores</a>
+            "<br>Chen Tian, Min Feng, Vijay Nagarajan and Rajiv Gupta<br><i>International Journal of Parallel Programming</i>, , June 2009.<br><br></li>
+          <li>"<a href="2009-05-IWMSE-COMPASS.html">COMPASS: A Community-driven Parallelization Advisor for Sequential Software</a>\
+            "<br>Simha Sethumadhavan,  Nipun Arora, Ravindra Babu Ganapathi,   John Demme, and Gail E. Kaiser<br><i>Proc. of the 2009 ICSE Workshop on Multicore Software Engineering (IWMSE '09)</i>, Washington, DC, USA, May 2009.<br><br></li>
+          <li>"<a href="2009-05-21-Thesis-Barrett-3c.html">3c: A JIT Compiler with LLVM</a>
+            "<br>Edd Barrett<br><i>Final Year Project, Bournemouth University</i>, United Kingdom, May 2009.<br><br></li>
+          <li>"<a href="2009-05-EnsuringCorrectnessOfCompiledCode.html">Ensuring Correctness of Compiled Code</a>
+            "<br>Ganna Zaks<br><i>Ph.D. Thesis, Computer Science Dept., New York University</i>, New York, NY, May 2009.<br><br></li>
+          <li>"<a href="http://homepages.uni-paderborn.de/mgrad/Mariusz_Grad_Homepage/Publications_files/grad09_fccm_poster.pdf">Woolcano: An Architecture and Tool Flow for Dynamic Instruction Set Extension on Xilinx Virtex-4 FX</a>
+            "<br>Mariusz Grad and Christian Plessl<br><i>Proceedings of IEEE Symposium on Field-Programmable Custom Machines (FCCM 2009)</i>, Napa, CA, USA, Apr. 2009.<br><br></li>
+          <li>"<a href="2009-04-TECS-MEMMU.html">MEMMU: Memory expansion for MMU-less embedded systems</a>
+            "<br>Lan S. Bai, Lei Yang, and Robert P. Dick<br><i>Proc. of the ACM Transactions on Embedded Computing Systems (TECS)</i>, New York, NY, USA, Apr. 2009.<br><br></li>
+          <li>"<a href="2009-04-SCOPES-SimulationOfInterruptsWithRollback.html">Precise simulation of interrupts using a rollback mechanism</a>
+            "<br>Florian Brandner<br><i>Proc. of the 12th International Workshop on Software and Compilers for Embedded Systems (SCOPES'09)</i>, Nice, France, Apr. 2009.<br><br></li>
+          <li>"<a href="2009-04-SCOPES-RegisterAllocationDeconstructed.html">Register allocation deconstructed</a>
+            "<br>David Ryan Koes and Seth Copen Goldstein<br><i>Proc. of the 12th International Workshop on Software and Compilers for Embedded Systems (SCOPES'09)</i>, Nice, France, Apr. 2009.<br><br></li>
+          <li>"Scheduling Techniques for Multi-Core Architectures" <a href="http://www.google.com/search?q=Scheduling%20Techniques%20for%20Multi-Core%20Architectures">search</a><br>Akira Hatanaka and Nader Bagherzadeh<br><i>2009 Sixth International Conference on Information Technology: New Generations</i>, Apr. 2009.<br><br></li>
+          <li>"<a href="2009-03-CGO-ESoftCheck.html">ESoftCheck: Removal of Non-vital Checks for Fault Tolerance</a>
+            "<br>Jing Yu, Maria Jesus Garzaran, Marc Snir<br><i>Proc. of the Seventh International Symposium on Code Generation and Optimization (CGO '09)</i>, Mar. 2009.<br><br></li>
+          <li>"<a href="2009-03-ASPLOS-DMP.html">DMP: deterministic shared memory multiprocessing</a>
+            "<br>Joseph Devietti, Brandon Lucia, Luis Ceze, and Mark Oskin<br><i>Proc. of the Fourteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '09)</i>, Mar. 2009.<br><br></li>
+          <li>"<a href="2009-03-ASPLOS-Recovery.html">Recovery Domains: An Organizing Principle for Recoverable Operating Systems</a>
+            "<br>Andrew Lenharth, Samuel T. King, Vikram Adve<br><i>Proc. of the Fourteenth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '09)</i>, Mar. 2009.<br><br></li>
+          <li>"<a href="2009-03-ACMSE-Superpage.html">A Case for Compiler-driven Superpage Allocation</a>
+            "<br>Joshua Magee and Apan Qasem<br><i>Proc. of the 47th ACM Southeast Regional Conference (ACMSE09)</i>, Mar. 2009.<br><br></li>
+          <li>"SORU: A Reconfigurable Vector Unit for Adaptable Embedded Systems" <a href="http://www.google.com/search?q=SORU%3A%20A%20Reconfigurable%20Vector%20Unit%20for%20Adaptable%20Embedded%20Systems">search</a><br>José M. Moya, Javier Rodríuez, et al<br><i>Proc. of the 5th International Workshop on Reconfigurable Computing: Architectures, Tools and Applications</i>, Mar. 2009.<br><br></li>
+          <li>"Compiling Techniques for Coarse Grained Runtime Reconfigurable Architecture" <a href="http://www.google.com/search?q=Compiling%20Techniques%20for%20Coarse%20Grained%20Runtime%20Reconfigurable%20Architecture">search</a><br>Mythri Alle, Keshavan Varadarajan, Alexander Fell, S. K. Nandy  and Ranjani Narayan<br><i>Proc. of the 5th International Workshop on Reconfigurable Computing: Architectures, Tools and Applications</i>, Mar. 2009.<br><br></li>
+          <li>"<a href="2009-02-PPoPP-MappingParallelism.html">Mapping parallelism to multi-cores: a machine learning based approach</a>
+            "<br>Zheng Wang and Michael F.P. O'Boyle<br><i>Proc. of the 14th ACM SIGPLAN symposium on Principles and practice of parallel programming (PPoPP'09)</i>, Feb. 2009.<br><br></li>
+          <li>"<a href="2009-01-POPL-PointerAnalysis.html">Semi-sparse flow-sensitive pointer analysis</a>
+            "<br>Ben Hardekopf and Calvin Lin<br><i>Proc. of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages (POPL'09)</i>, Savannah, GA, USA, Jan. 2009.<br><br></li>
+          <li>"<a href="2009-01-VMCAI-ScalableMemoryModel.html">A Scalable Memory Model for Low-Level Code</a>
+            "<br>Zvonimir Rakamaric and Alan J. Hu<br><i>Proc. of the 10th International Conference on Verification, Model Checking and Abstract Interpretation (VMCAI 2009)</i>, Savannah, GA, USA, Jan. 2009.<br><br></li>
+          <li>"<a href="2009-01-PEPM-Parfait.html">Program Analysis for Bug Detection using Parfait</a>
+            "<br>Cristina Cifuentes, Nathan Keynes, Lian Li, and Bernhard Scholz<br><i>Proc. of the 2009 ACM SIGPLAN workshop on Partial evaluation and program manipulation (PEPM'09)</i>, Savannah, GA, USA, Jan. 2009.<br><br></li>
+          <li>"<a href="2009-01-ASP-DAC-Automatic_Instrumentation.html">Automatic Instrumentation of Embedded Software for High Level Hardware/Software Co-Simulation</a>
+            "<br>Aimen Bouchhima, Patrice Gerin, Frederic Petrot<br><i>Proc. of the 14th Asia South Pacific Design Automation Conference (ASP-DAC'09)</i>, Yokohama, Japan, Jan. 2009.<br><br></li>
+          <li>"<a href="2009-01-ASP-DAC-MemorySimulation.html">Memory subsystem simulation in software TLM/T models</a>
+            "<br>Eric Cheung, Harry Hsieh, and Felice Balarin<br><i>Proc. of the 14th Asia South Pacific Design Automation Conference (ASP-DAC'09)</i>, Yokohama, Japan, Jan. 2009.<br><br></li>
+          <li>"<a href="2009-01-Pattabiraman-Thesis.html">Automated Derivation of Application-Aware Error and Attack Detectors</a>
+            "<br>Karthik Pattabiraman<br><i>Ph.D. Thesis, University of Illinois at Urbana-Champaign</i>, Jan. 2009.<br><br></li></ol><h2>2008</h2><ol>
+          <li>"<a href="2008-12-OSDI-KLEE.html">KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs</a>
+            "<br>Cristian Cadar, Daniel Dunbar, Dawson Engler<br><i>Proc. 8th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2008)</i>, Dec. 2008.<br><br></li>
+          <li>"<a href="2008-11-MICRO-CopyOrDiscard.html">Copy Or Discard Execution Model For Speculative Parallelization On Multicores </a>
+            "<br>Chen Tian, Min Feng, V. Nagarajan, R. Gupta<br><i>MICRO-41: 41st International Symposium on Microarchitecture</i>, Lake Como, Italy, Nov. 2008.<br><br></li>
+          <li>"<a href="2008-11-ICCAD-MCSim.html">MC-Sim: an efficient simulation tool for MPSoC designs</a>
+            "<br>Jason Cong, Karthik Gururaj, Guoling Han, Adam Kaplan, Mishali Naik, and Glenn Reinman<br><i>Proc. of the 2008 IEEE/ACM International Conference on Computer-Aided Design (ICCAD'08)</i>, San Jose, CA, Nov. 2008.<br><br></li>
+          <li>"<a href="2008-11-PASTE-CompilerValidation.html">Program analysis for compiler validation</a>
+            "<br>Anna Zaks and Amir Pnueli<br><i>Proc. of the 8th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering (PASTE'08)</i>, Atlanta, Georgia, Nov. 2008.<br><br></li>
+          <li>"<a href="2008-10-04-ACAT-LLVM-Intro.html">Introduction to the LLVM Compiler System</a>
+            "<br>Chris Lattner<br><i>Plenary Talk, <a href="http://acat2008.cern.ch/">ACAT 2008</a>: Advanced Computing and Analysis Techniques in Physics Research</i>, Erice, Sicily, Italy, Nov. 2008.<br><br></li>
+          <li>"<a href="2008-10-EMSOFT-Volatiles.html">Volatiles Are Miscompiled, and What to Do about It</a>
+            "<br>Eric Eide, John Regehr<br><i>Proc. EMSOFT International Conference on Embedded Software (EMSOFT 2008)</i>, Oct. 2008.<br><br></li>
+          <li>"<a href="2008-10-CASES-ExecutionContextOptimization.html">Execution Context Optimization for Disk Energy</a>
+            "<br>Jerry Hom and Ulrich Kremer<br><i>Proc. of the 2008 international conference on Compilers, architectures and synthesis for embedded systems (CASES'08)</i>, Oct. 2008.<br><br></li>
+          <li>"<a href="2008-09-ASE-FrameAxioms.html">Automatic Inference of Frame Axioms Using Static Analysis</a>
+            "<br>Zvonimir Rakamaric and Alan J. Hu<br><i>23rd IEEE/ACM International Conference on Automated Software Engineering (ASE 2008)</i>, L'Aquila, Italy, Sep. 2008.<br><br></li>
+          <li>"<a href="2008-09-LadyVM.html">A Lazy Developer Approach: Building a JVM with Third Party Software</a>
+            "<br>Nicolas Geoffray, Gael Thomas, Charles Clement and Bertil Folliot<br><i>Proc. International Conference on Principles and Practice of Programming In Java (PPPJ 2008)</i>, Sep. 2008.<br><br></li>
+          <li>"<a href="2008-09-Lightspark.html">An Efficient ActionScript 3.0 Just-In-Time Compiler Implementation</a>
+            "<br>Alessandro Pignotti<br><i>Bachelor Thesis, Universita degli Studi di Pisa</i>, Sep. 2008.<br><br></li>
+          <li>"<a href="2008-08-RTCodegen.html">Run-Time Code Generation for Materials</a>
+            "<br>Stephan Reiter<br><i>IEEE Symposium on Interactive Ray Tracing (RT'08)</i>, Aug. 2008.<br><br></li>
+          <li>"<a href="2008-08-SPIN-Pancam.html">Verifying Multi-threaded C Programs with SPIN</a>
+            "<br>Anna Zaks and Rajeev Joshi<br><i>Proc. International SPIN Workshop on Model Checking of Software (SPIN 2008)</i>, Aug. 2008.<br><br></li>
+          <li>"<a href="2008-07-RSSI-CHiMPS.html">LLVM-CHiMPS: Compilation Environment for FPGAs Using LLVM Compiler Infrastructure and CHiMPS Computational Model</a>
+            "<br>Seung J. Lee, David K. Raila, and Volodymyr V. Kindratenko<br><i>Reconfigurable Systems Summer Institute 2008 (RSSI'08)</i>, July 2008.<br><br></li>
+          <li>"<a href="2008-06-Reiter-Thesis.html">Real-Time Ray Tracing of Dynamic Scenes</a>
+            "<br>Stephan Reiter<br><i>Diploma Thesis, Institute for Graphics and Parallel Processing, Johannes Kepler University</i>, Linz, Austria, June 2008.<br><br></li>
+          <li>"<a href="2008-06-CompilingHaskelltoLLVM.html">Compiling Haskell to LLVM</a>
+            "<br>John van Schie<br><i>Thesis Defense, Utrecht University</i>, Netherlands, June 2008.<br><br></li>
+          <li>"<a href="2008-06-LCTES-ISelUsingSSAGraphs.html">Generalized Instruction Selection using SSA-Graphs</a>
+            "<br>Dietmar Ebner, Florian Brandner, Bernhard Scholz, Andreas Krall, Peter Wiedermann and Albrecht Kadlec<br><i>Proc. Languages Compilers and Tools for Embedded Systems 2008 (LCTES'08)</i>, June 2008.<br><br></li>
+          <li>"<a href="2008-06-13-SPAA-STMDataPartitioning.html">Automatic Data Partitioning in Software Transactional Memories</a>
+            "<br>Torvald Riegel, Christof Fetzer, and Pascal Felber<br><i>Proc. 20th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'08)</i>, June 2008.<br><br></li>
+          <li>"<a href="2008-06-PLDI-PuzzleSolving.html">Register Allocation by Puzzle Solving</a>
+            "<br>Fernando Magno Quintao Pereira and Jens Palsberg<br><i>Proc. ACM SIGPLAN 2008 Conference on Programming Language Design and Implementation (PLDI'08)</i>, June 2008.<br><br></li>
+          <li>"<a href="2008-06-SAW-Parfait.html">Parfait - Designing a Scalable Bug Checker</a>
+            "<br>Cristina Cifuentes and Bernhard Scholz<br><i>Proc. of the 2008 workshop on Static analysis (SAW'08)</i>, June 2008.<br><br></li>
+          <li>"<a href="2008-06-DSNPDS-ErrorDerating.html">A characterization of instruction-level error derating and its implications for error detection</a>
+            "<br>Jeffrey J. Cook and Craig Zilles<br><i>IEEE International Conference on Dependable Systems and Networks With FTCS and DCC (DSN'08)</i>, June 2008.<br><br></li>
+          <li>"<a href="2008-05-CoVaC.html">CoVaC: Compiler Validation by Program Analysis of the Cross-Product</a>
+            "<br>Anna Zaks and Amir Pnueli<br><i>Proc. International Symposium on Formal Methods (FM 2008)</i>, May 2008.<br><br></li>
+          <li>"<a href="2008-05-17-BSDCan-LLVMIntro.html">LLVM and Clang: Next Generation Compiler Technology</a>
+            "<br>Chris Lattner<br><i><a href="http://www.bsdcan.org/2008/">BSDCan 2008</a>: The BSD Conference</i>, Ottawa, Canada, May 2008.<br><br></li>
+          <li>"<a href="2008-05-ISCE-Calysto.html">Calysto: Scalable and Precise Extended Static Checking</a>
+            "<br>Domagoj Babic and Alan J. Hu<br><i>Proc. of the 30th international conference on Software engineering (ICSE'08)</i>, May 2008.<br><br></li>
+          <li>"<a href="2008-03-ASPLOS-HardErrorPropagation.html">Understanding the Propagation of Hard Errors to Software and Implications for Resilient System Design</a>
+            "<br>Man-Lap Li, Pradeep Ramachandran, Swarup K. Sahoo, Sarita V. Adve, Vikram S. Adve, Yuanyuan Zhou<br><i>Proc. of the 13th international conference on Architectural support for programming languages and operating systems (ASPLOS'08)</i>, Mar. 2008.<br><br></li>
+          <li>"<a href="2008-03-DATE-TLM_Estimation.html">Cycle-approximate Retargetable Performance Estimation at the Transaction Level</a>
+            "<br>Y. Hwang, S. Abdi, and D. Gajski<br><i>Proc. of Design Automation and Test in Europe (DATE'08)</i>, Munich, Germany, Mar. 2008.<br><br></li>
+          <li>"<a href="2008-03-TR-UIDependAnalysis.html">User-Input Dependence Analysis via Graph Reachability</a>
+            "<br>Bernard Scholz, Chenyi Zhang, and Cristina Cifuentes<br><i>Technical Report #TR-2008-171, Sun Microsystems</i>, Mar. 2008.<br><br></li>
+          <li>"<a href="2008-03-SAC-SoftwareFaults.html">Automatic Software Fault Localization using Generic Program Invariants</a>
+            "<br>Rui Abreu, Alberto Gonzalez, Peter Zoeteweij, and Arjan J.C. van Gemund<br><i>Proc. of the 2008 ACM symposium on Applied computing (SAC'08)</i>, Mar. 2008.<br><br></li>
+          <li>"<a href="2008-02-ImpedingMalwareAnalysis.html">Impeding Malware Analysis Using Conditional Code Obfuscation</a>"<br>Monirul Sharif, Andrea Lanzi, Jonathon Giffin and Wenke Lee<br><i>Network and Distributed System Security Symposium (NDSS'08)</i>, San Diego, CA, Feb. 2008.<br><br></li>
+          <li>"<a href="2008-02-23-TRANSACT-TangerObjBased.html">Making Object-Based STM Practical in Unmanaged Environments</a>"<br>Torvald Riegel and Diogo Becker de Brum<br><i>ACM SIGPLAN Workshop on Transactional Computing (TRANSACT 2008)</i>, Salt Lake City, Utah, 2008.<br><br></li>
+          <li>"<a href="2008-CGO-DagISel.html">Near-Optimal Instruction Selection on DAGs</a>
+            "<br>David Ryan Koes and Seth Copen Goldstein<br><i>Proc. of the 2008 International Symposium on Code Generation and Optimization (CGO'08)</i>, Boston, MA, 2008.<br><br></li></ol><h2>2007</h2><ol>
+          <li>"<a href="2007-SOSP-SVA.html">Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems</a>
+            "<br>John Criswell, Andrew Lenharth, Dinakar Dhurjati, and Vikram Adve<br><i>Proc. of the Twenty First ACM Symposium on Operating Systems Principles (SOSP '07)</i>, Stevenson, WA, Oct. 2007.<br><b>Received an SOSP 2007 Audience Choice Award.</b><br><br></li>
+          <li>"<a href="2007-10-PekkaTTA.html">Retargetable Compiler Backend for Transport Triggered Architectures</a>
+            "<br>Veli-Pekka Jaaskelainen<br><i>Masters Thesis</i>, Tampere University of Technology, Oct. 2007.<br><br></li>
+          <li>"<a href="2007-10-DLS-RPython.html">RPython: a Step Towards Reconciling Dynamically and Statically Typed OO Languages</a>
+            "<br>Davide Ancona, Massimo Ancona, Antonio Cuni, and Nicholas D. Matsakis<br><i>Proc. of the 2007 symposium on Dynamic languages (DLS'07)</i>, Oct. 2007.<br><br></li>
+          <li>"<a href="2007-09-ESEC-FSE-DesignOptzn.html">A Profile-Driven Statistical Analysis Framework for the Design Optimization of Soft Real-Time Applications</a>
+            "<br>Tushar Kumar, Jaswanth Sreeram, Romain Cledat, and Santosh Pande<br><i>Proc.  of the the 6th joint meeting of the European software engineering conference and the ACM SIGSOFT symposium on The foundations of software engineering (ESEC-FSE'07)</i>, Sep. 2007.<br><br></li>
+          <li>"<a href="2007-08-16-TRANSACT-Tanger.html">Transactifying Applications Using an Open Compiler Framework</a>
+            "<br>Pascal Felber, Christof Fetzer, Ulrich Mueller, Torvald Riegel, Martin Suesskraut, and Heiko Sturzrehm<br><i>TRANSACT 2007</i>, Aug. 2007.<br><br></li>
+          <li>"<a href="2007-07-25-LLVM-2.0-and-Beyond.html">LLVM 2.0 and Beyond!</a>
+            "<br>Chris Lattner<br><i>Google Tech Talk</i>, Mountain View, CA, July 2007.<br><br></li>
+          <li>"<a href="2007-07-CAV-StructuralAbstraction.html">Structural Abstraction of Software Verification Conditions</a>
+            "<br>Domagoj Babic and Alan J. Hu<br><i>Proc. of the 19th Int. Conf. on Computer Aided Verification (CAV'07)</i>, Berlin, Germany, July 2007.<br><br></li>
+          <li>"<a href="2007-07-SCSC-Simulation.html">Compiled low-level virtual instruction set simulation and profiling for code partitioning and ASIP-synthesis in hardware/software co-design</a>
+            "<br>Carsten Gremzow<br><i>Proc. of the 2007 summer computer simulation conference (SCSC'07)</i>, July 2007.<br><br></li>
+          <li>"<a href="2007-06-10-PLDI-DSA.html">Making Context-Sensitive Points-to Analysis with Heap Cloning Practical For The Real World</a>
+            "<br>Chris Lattner, Andrew Lenharth, and Vikram Adve<br><i>Proc. of the 2007 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'07)</i>, San Diego, CA, June 2007.<br><br></li>
+          <li>"<a href="2007-05-31-Switch-Lowering.html">Improving Switch Lowering for The LLVM Compiler System</a>
+            "<br>Anton Korobeynikov<br><i>Proc. of the 2007 Spring Young Researchers Colloquium on Software Engineering (SYRCoSE'2007)</i>, Moscow, Russia, May 2007.<br><br></li>
+          <li>"<a href="2007-04-SCOPES-ChainRulePlacement.html">Optimal chain rule placement for instruction selection based on SSA graphs</a>
+            "<br>Stefan Schafer and Bernhard Scholz<br><i>Proc. of the 10th international workshop on Software &amp; compilers for embedded systems (SCOPES'07)</i>, Apr. 2007.<br><br></li>
+          <li>"<a href="2007-04-PraherMSThesis.html">A Change Framework based on the Low Level Virtual Machine Compiler Infrastructure</a>
+            "<br>Jakob Praher<br><i>Masters Thesis</i>, Institute for System Software Johannes Kepler University Linz, Apr. 2007.<br><br></li>
+          <li>"<a href="2007-03-SPLAT-Aspects.html">An Aspect for Idiom-based Exception Handling (using local continuation join points, join point properties, annotations and type parameters)</a>
+            "<br>Bram Adams and Kris De Schutter<br><i>Proc. of the 5th Software-Engineering Properties of Languages and Aspect Technologies Workshop (SPLAT)</i>, AOSD 2007, Vancouver, Canada, Mar. 2007.<br><br></li>
+          <li>"<a href="2007-03-12-BossaLLVMIntro.html">The LLVM Compiler System</a>
+            "<br>Chris Lattner<br><i>2007 Bossa Conference on Open Source, Mobile Internet and Multimedia</i>, Recife, Brazil, Mar. 2007.<br><br></li>
+          <li>"<a href="2007-03-Computer-Trident.html">Trident: From High-Level Language to Hardware Circuitry</a>
+            "<br>Justin L. Tripp, Maya B. Gokhale, and Kristopher D. Peterson<br><i>IEEE Computer</i>, Mar. 2007.<br><br></li>
+          <li>"<a href="2007-01-SaP-Security.html">Toward Application-Aware Security and Reliability</a>
+            "<br>Ravishankar K. Iyer, Zbigniew Kalbarczyk, Karthik Pattabiraman, William Healey, Wen-Mei W. Hwu, Peter Klemperer, and Reza Farivar<br><i>IEEE Security and Privacy</i>, Jan. 2007.<br><br></li></ol><h2>2006</h2><ol>
+          <li>"<a href="2006-10-ICNPC-ScalingTaskGraphs.html">Scaling Task Graphs for Network Processors</a>
+            "<br>Martin Labrecque and J. Gregory Steffan<br><i>IFIP International Conference on Network and Parallel Computing</i>, Tokyo, Japan, Oct. 2006.<br><br></li>
+          <li>"<a href="2006-10-CASES-IncreaseMem.html">Automated Compile-Time and Run-Time Techniques to Increase Usable Memory in MMU-Less Embedded Systems</a>
+            "<br>L. Bai, L. Yang, and R. P. Dick<br><i>Proc. Int. Conf. Compilers, Architecture &amp; Synthesis for Embedded Systems</i>, pp. 125-135, Oct. 2006.<br><br></li>
+          <li>"<a href="2006-10-DLS-PyPy.html">PyPy's approach to virtual machine construction</a>
+            "<br>Armin Rigo and Samuele Pedroni<br><i>Dynamic Languages Symposium (DLS'06)</i>, Oct. 2006.<br><br></li>
+          <li>"<a href="2006-09-SOC-Synthesis.html">Platform-Based Behavior-Level and System-Level Synthesis</a>
+            "<br>J. Cong, Y. Fan, G. Han, W. Jiang, and Z. Zhang<br><i>Proc. of IEEE International SOC Conference</i>, pp. 199-202, Austin, Texas, Sep. 2006.<br><br></li>
+          <li>"<a href="2006-DSN-DanglingPointers.html">Efficiently Detecting All Dangling Pointer Uses in Production Servers</a>
+            "<br>Dinakar Dhurjati and Vikram Adve<br><i>Proc. of the International Conference on Dependable Systems and Networks (DSN '06)</i>, Philadelphia, Pennsylvania, 2006.<br><br></li>
+          <li>"<a href="2006-06-18-WIOSCA-LLVAOS.html">A Virtual Instruction Set Interface for Operating System Kernels</a>
+            "<br>John Criswell, Brent Monroe, and Vikram Adve<br><i>Workshop on the Interaction between Operating Systems and Computer Architecture (WIOSCA '06)</i>, Boston, Massachusetts, June 2006.<br><br></li>
+          <li>"<a href="2006-06-12-PLDI-SAFECode.html">SAFECode: Enforcing Alias Analysis for Weakly Typed Languages</a>
+            "<br>Dinakar Dhurjati, Sumant, Kowshik, and Vikram Adve<br><i>Proc. of the 2006 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI '06)</i>, Ottawa, Canada, June 2006.<br><br></li>
+          <li>"<a href="http://llvm.org/pubs/2006-05-24-SAFECode-BoundsCheck.html">Backwards-Compatible Array Bounds Checking for C with Very Low Overhead</a>
+            "<br>Dinakar Dhurjati and Vikram Adve<br><i>Proc. of the 28th International Conference on Software Engineering (ICSE '06)</i>, Shanghai, China, May 2006.<br><br></li>
+          <li>"<a href="2006-06-15-VEE-VectorLLVA.html">Vector LLVA: A Virtual Vector Instruction Set for Media Processing</a>
+            "<br>Robert L. Bocchino Jr. and Vikram S. Adve<br><i>Proc. of the Second International Conference on Virtual Execution Environments (VEE'06)</i>, Ottawa, Canada, June 2006.<br><br></li>
+          <li>"<a href="2006-06-07-LewyckyChecker.html">Checker: a Static Program Checker</a>
+            "<br>Nicholas Lewycky<br><i>B.Sc. Thesis</i>, Computer Science Dept., Ryerson University, June 2006.<br><br></li>
+          <li>"<a href="2006-04-25-GelatoLLVMIntro.html">Introduction to the LLVM Compiler Infrastructure</a>
+            "<br>Chris Lattner<br><i>2006 Itanium Conference and Expo</i>, San Jose, California, Apr. 2006.<br><br></li>
+          <li>"<a href="2006-04-04-CGO-GraphColoring.html">Tailoring Graph-coloring Register Allocation For Runtime Compilation</a>
+            "<br>Keith D. Cooper and Anshuman Dasgupta<br><i>Proc. of the 2006 International Symposium on Code Generation and Optimization (CGO'06)</i>, New York, New York, Mar. 2006.<br><br></li>
+          <li>"<a href="2006-01-LabrecqueMSThesis.html">Towards a Compilation Infrastructure for Network Processors</a>
+            "<br>Martin Labrecque<br><i>Masters Thesis</i>, Department of Electrical and Computer Engineering, University of Toronto, Jan. 2006.<br><br></li></ol><h2>2005</h2><ol>
+          <li>"<a href="2005-TR-DSAEvaluation.html">How Successful is Data Structure Analysis in Isolating and Analyzing Linked Data Structures?</a>
+            "<br>Patrick Meredith, Balpreet Pankaj, Swarup Sahoo, Chris Lattner and Vikram Adve<br><i>Technical Report #UIUCDCS-R-2005-2658, Computer Science Dept., Univ. of Illinois</i>, Dec. 2005.<br><br></li>
+          <li>"<a href="2005-11-SAFECodeTR.html">Enforcing Alias Analysis for Weakly Typed Languages</a>
+            "<br>Dinakar Dhurjati, Sumant Kowshik, and Vikram Adve<br><i>Technical Report #UIUCDCS-R-2005-2657, Computer Science Dept., Univ. of Illinois</i>, Nov. 2005.<br><br></li>
+          <li>"<a href="2005-10-20-LCPC-RegAlloc.html">Revisiting Graph Coloring Register Allocation: A Study of the Chaitin-Briggs and Callahan-Koblenz Algorithms</a>
+            "<br>By Keith Cooper, Anshuman Dasgupta, and Jason Eckhardt<br><i>Proc. of the Workshop on Languages and Compilers for Parallel Computing (LCPC'05)</i>, Hawthorne, NY, Oct. 2005.<br><br></li>
+          <li>"<a href="2005-09-25-CASES05-SegmentProtection.html">Segment Protection for Embedded Systems Using Run-time Checks</a>
+            "<br>By Matthew Simpson, Bhuvan Middha and Rajeev Barua<br><i>Proc. of the ACM International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES'05)</i>, San Francisco, CA, Sep. 2005.<br><br></li>
+          <li>"<a href="2005-09-PASTE-GreedySuiteMinimization.html">A Concept Analysis Inspired Greedy Algorithm for Test Suite Minimization</a>
+            "<br>By Sriraman Tallam and Neelam Gupta<br><i>ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering (PASTE 2005)</i>, Lisbon, Portugal, Sep. 2005.<br><br></li>
+          <li>"<a href="2005-08-EUROPAR-PerformanceLibs.html">Deciding Where to Call Performance Libraries</a>
+            "<br>By C. Alias and D. Barthou<br><i>Proc. of the International IEEE Euro-Par Conference</i>, Aug. 2005.<br><br></li>
+          <li>"<a href="2005-07-IDEAS-PerfEstimation.html">Practical Techniques for Performance Estimation of Processors</a>
+            "<br>Abhijit Ray, Thambipillai Srikanthan and Wu Jigang<br><i>Proc. of the 9th International Database Engineering &amp; Application Symposium (IDEAS'05)</i>, July 2005.<br><br></li>
+          <li>"<a href="2005-07-ZimmermanMSThesis.html">Profile-directed If-Conversion in Superscalar Microprocessors</a>
+            "<br>Eric Zimmerman<br><i>Masters Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, July 2005.<br><br></li>
+          <li>"<a href="2005-06-17-LattnerMSThesis.html">An Implementation of Swing Modulo Scheduling with Extensions for Superblocks</a>
+            "<br>Tanya M. Lattner<br><i>M.S. Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, June 2005.<br><br></li>
+          <li>"<a href="2005-05-04-LattnerPHDThesis.html">Macroscopic Data Structure Analysis and Optimization</a>
+            "<br>Chris Lattner<br><i>Ph.D. Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, May 2005.<br><br></li>
+          <li>"<a href="2005-05-21-PLDI-PoolAlloc.html">Automatic Pool Allocation: Improving Performance by Controlling Data Structure Layout in the Heap</a>
+            "<br>Chris Lattner and Vikram Adve<br><i>Proc. of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI'05)</i>, Chicago, Illinois, June 2005.<br><b>Received PLDI 2005 Best Paper Award.</b><br><br></li>
+          <li>"<a href="2005-06-12-MSP-PointerComp.html">Transparent Pointer Compression for Linked Data Structures</a>
+            "<br>Chris Lattner and Vikram Adve<br><i>Proc. of the ACM Workshop on Memory System Performance (MSP'05)</i>, Chicago, Illinois, June 2005.<br><br></li>
+          <li>"<a href="2005-03-14-ACP4IS-AspectsKernel.html">Using a Low-Level Virtual Machine to Improve Dynamic Aspect Support in Operating System Kernels</a>
+            "<br>By Michael Engel and Bernd Freisleben<br><i>Proc. of the 4th AOSD Workshop on Aspects, Components, and Patterns for Infrastructure Software (ACP4IS'05)</i>, Chicago, Mar. 2005.<br><br></li>
+          <li>"<a href="2005-02-TECS-SAFECode.html">Memory Safety Without Garbage Collection for Embedded Applications</a>
+            "<br>Dinakar Dhurjati, Sumant Kowshik, Vikram Adve and Chris Lattner<br><i>ACM Transactions in Embedded Computing Systems (TECS)</i>, Feb. 2005.<br><br></li></ol><h2>2004</h2><ol>
+          <li>"<a href="2004-09-22-LCPCLLVMTutorial.html">The LLVM Compiler Framework and Infrastructure Tutorial</a>
+            "<br>Chris Lattner and Vikram Adve<br><i>LCPC'04 Mini Workshop on Compiler Research Infrastructures</i>, West Lafayette, Indiana, Sep. 2004.<br><br></li>
+          <li>"<a href="2004-Spring-AlexanderssonMSThesis.html">RubyComp - A Ruby-to-LLVM Compiler Prototype</a>
+            "<br>Anders Alexandersson<br><i>Masters Thesis</i>, Division of Computer Science at the Department of Informatics and Mathematics, University of Trollhättan/Uddevalla, Sweden, 2004.<br><br></li>
+          <li>"<a href="2004-05-JoshiMSThesis.html">A Task Optimization Framework for MSSP</a>
+            "<br>Rahul Ulhas Joshi<br><i>Masters Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, May 2004.<br><br></li>
+          <li>"<a href="2004-03-ICDCS-Adaptions.html">Coordinating Adaptations in Distributed Systems</a>
+            "<br>Brian Ensink and Vikram Adve<br><i>Proc. of the 24th International Conference on Distributed Computing Systems (ICDCS 2004)</i>, Tokyo, Japan, Mar. 2004.<br><br></li>
+          <li>"<a href="2004-01-30-CGO-LLVM.html">LLVM: A Compilation Framework for Lifelong Program Analysis &amp; Transformation</a>
+            "<br>Chris Lattner and Vikram Adve<br><i>Proc. of the 2004 International Symposium on Code Generation and Optimization (CGO'04)</i>, Palo Alto, California, Mar. 2004.<br><br></li></ol><h2>2003</h2><ol>
+          <li>"<a href="2003-10-01-LLVA.html">LLVA: A Low-level Virtual Instruction Set Architecture</a>
+            "<br>Vikram Adve, Chris Lattner, Michael Brukman, Anand Shukla, and Brian Gaeke<br><i>Proc. of the 36th annual ACM/IEEE International Symposium on Microarchitecture (MICRO-36)</i>, San Diego, CA, Dec. 2003.<br><br></li>
+          <li>"<a href="2003-07-18-StanleyMSThesis.html">Language Extensions for Performance-Oriented Programming</a>
+            "<br>Joel Stanley<br><i>Masters Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, July 2003.<br><br></li>
+          <li>"<a href="2003-07-18-ShuklaMSThesis.html">Lightweight, Cross-Procedure Tracing for Runtime Optimization</a>
+            "<br>Anand Shukla<br><i>Masters Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, July 2003.<br><br></li>
+          <li>"<a href="2003-05-05-LCTES03-CodeSafety.html">Memory Safety Without Runtime Checks or Garbage Collection</a>
+            "<br>Dinakar Dhurjati, Sumant Kowshik, Vikram Adve and Chris Lattner<br><i>Proc. of Languages Compilers and Tools for Embedded Systems 2003 (LCTES 03)</i>, San Diego, CA, June 2003.<br><br></li>
+          <li>"<a href="2003-05-01-GCCSummit2003.html">Architecture For a Next-Generation GCC</a>
+            "<br>Chris Lattner &amp; Vikram Adve<br><i>First Annual GCC Developers' Summit</i>, Ottawa, Canada, May 2003.<br><br></li>
+          <li>"<a href="2003-04-29-DataStructureAnalysisTR.html">Data Structure Analysis: An Efficient Context-Sensitive Heap Analysis</a>
+            "<br>Chris Lattner &amp; Vikram Adve<br><i>Technical Report #UIUCDCS-R-2003-2340</i>, Computer Science Dept., Univ. of Illinois, Apr. 2003.<br><br></li></ol><h2>2002</h2><ol>
+          <li>"<a href="2002-12-LattnerMSThesis.html">LLVM: An Infrastructure for Multi-Stage Optimization</a>
+            "<br>Chris Lattner<br><i>Masters Thesis</i>, Computer Science Dept., University of Illinois at Urbana-Champaign, Dec. 2002.<br><br></li>
+          <li>"<a href="2002-08-08-CASES02-ControlC.html">Ensuring Code Safety Without Runtime Checks for Real-Time Control Systems</a>
+            "<br>Sumant Kowshik, Dinakar Dhurjati, and Vikram Adve<br><i>Proc. Int'l Conf. on Compilers, Architecture and Synthesis for Embedded Systems (CASES02)</i>, Grenoble, France, Oct. 2002.<br><br></li>
+          <li>"<a href="2002-06-AutomaticPoolAllocation.html">Automatic Pool Allocation for Disjoint Data Structures</a>
+            "<br>Chris Lattner &amp; Vikram Adve<br><i>ACM SIGPLAN Workshop on Memory System Performance (MSP)</i>, Berlin, Germany, June 2002.<br><br></li></ol></div>
+    </div>
+ </article>
+    
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  </head>
+  <body>
+      <div id="aboutSideBar-placeholder"></div>
+      <script>
+          $.get("aboutSideBar", function(data){
+              $("#aboutSideBar-placeholder").replaceWith(data);
+          });
+      </script> 
+  </body>
+ </section>
+</html>
