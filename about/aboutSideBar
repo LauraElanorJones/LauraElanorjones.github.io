@@ -33,7 +33,7 @@ body {margin: 0; padding: 0;}
         </p>
 
 <b>About:</b>
-<div class="www_sidebar">
+<div class="www_sidebar bigSideBar">
 <a href="Features.html">Features</a><br>
 <a href="publications.html">Publications</a><br>
 <a href="Users.html">LLVM&nbsp;Users</a><br>
@@ -42,7 +42,7 @@ body {margin: 0; padding: 0;}
 <br>
 
 <b>Download!</b>
-<div class="www_sidebar">
+<div class="www_sidebar bigSideBar">
 <span style="font-size:smaller">Download now:</span>
 <a href="https://releases.llvm.org/"><b>LLVM&nbsp;18.1.2</b></a><br>
 <a href="/releases/">All Releases</a><br>
@@ -73,7 +73,7 @@ body {margin: 0; padding: 0;}
 <br>
 
 <b>Release&nbsp;Emails</b>
-<div class="www_sidebar">
+<div class="www_sidebar bigSideBar">
   <span style="font-size:smaller">
   18.1.2: <a href="https://discourse.llvm.org/t/18-1-2-released/77821">Mar 2024</a><br>
   18.1.1: <a href="https://discourse.llvm.org/t/llvm-18-1-1-released/77540">Mar 2024</a><br>
